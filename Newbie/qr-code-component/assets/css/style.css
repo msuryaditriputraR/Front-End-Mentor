@@ -25,6 +25,46 @@
 }
 
 body {
-    font-size: 15px;
     font-family: var(--main-font);
+}
+
+img {
+    width: 100%;
+}
+
+/* === LAYOUT === */
+main {
+    padding: 100px 0;
+    height: 100vh;
+    background-color: var(--light-gray);
+}
+
+/* === CARD === */
+
+.card {
+    background-color: var(--white-color);
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.qr {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card__title {
+    color: var(--dark-blue);
+    font-weight: var(--fw-bold);
+    font-size: 22px;
+    margin: 20px 0 15px;
+}
+
+.card__description {
+    color: var(--grayish-blue);
+    font-weight: var(--fw-regular);
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
