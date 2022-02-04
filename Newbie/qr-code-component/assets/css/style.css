@@ -1,0 +1,30 @@
+/* === Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* === Variabel CSS === */
+:root {
+    /* COLORS */
+    --white-color: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    /* Typography */
+    --main-font: 'Outfit', sans-serif;
+
+    /* Font-Weight */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* === RESET CSS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: var(--main-font);
+}
