@@ -1,0 +1,214 @@
+/* === GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* === VARIABLES CSS === */
+:root {
+    /* COLORS */
+    --main-color: hsl(257, 40%, 49%);
+    --hover-color: hsl(300, 69%, 71%);
+    --white-color: #fff;
+
+    /* TYPOGRAPHY */
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --heading-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .785rem;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --heading-font-size: 2.5rem;
+        --normal-font-size: 1.275rem;
+        --smaller-font-size: 1rem;
+    }
+}
+
+/* === RESET CSS === */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-color: var(--main-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === LAYOUT === */
+.bd-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
+}
+
+.l-header {
+    width: 100%;
+    background-color: transparent;
+}
+
+/* === HEADER === */
+.nav {
+    padding: 2rem;
+}
+
+.nav__logo img {
+    max-width: 130px;
+}
+
+/* === HOME === */
+.home {
+    grid-template-rows: repeat(3, max-content);
+    color: var(--white-color);
+}
+
+/* HOME IMAGE */
+.home__image {
+    padding: 1.2rem 0 3rem;
+}
+
+.home__image img {
+    width: 305px;
+}
+
+/* HOME TEXT */
+.home__text {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    padding-right: .5rem;
+}
+
+.home__title {
+    font-weight: 600;
+    font-size: var(--heading-font-size);
+}
+
+.home__description {
+    margin: 1rem 0 2rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+.home__button {
+    background-color: var(--white-color);
+    padding: .7rem 5rem;
+    border-radius: 2.5rem;
+    font-size: var(--smaller-font-size);
+    color: var(--main-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
+    transition: .3s;
+}
+
+.home__button:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.home__medsos {
+    padding-right: .5rem;
+    margin: 4.5rem 0 2rem;
+}
+
+.home__medsos ul {
+    display: flex;
+    justify-content: center;
+}
+
+.home__medsos ul li {
+    margin: 0 .5rem;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    padding: .3rem;
+    line-height: var(--normal-font-size);
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.home__medsos ul li:hover {
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+}
+
+/* === TEBLET DESIGN === */
+@media screen and (min-width: 785px) {
+    body {
+        background-image: none;
+    }
+
+    .home__image {
+        padding: 0;
+        text-align: center;
+    }
+
+}
+
+/* === DESKTOP DESIGN === */
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url('../images/bg-desktop.svg');
+    }
+
+    .bd-grid {
+        width: calc(100% - 8rem);
+        margin: 2rem 4rem;
+    }
+
+    .nav {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .nav__logo img {
+        max-width: 180px;
+    }
+
+    .home {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .home__image {
+        padding: 0;
+    }
+
+    .home__image img {
+        width: auto;
+    }
+
+    .home__text {
+        padding: 3rem;
+        text-align: left;
+    }
+
+    .home__button {
+        display: inline-block;
+        padding: .7rem 4rem;
+    }
+
+    .home__medsos {
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+    }
+}
