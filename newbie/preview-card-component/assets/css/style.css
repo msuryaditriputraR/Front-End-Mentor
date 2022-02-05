@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.text {
+    flex-basis: 55%;
+    padding: 4rem 7rem 4rem 4rem;
+}
+
+.text .title {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.text .hl {
+    color: hsl(277, 64%, 61%);
+}
+
+.text .description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.text .amounts {
+    display: flex;
+}
+
+.text .amount {
+    flex: 25%;
+}
+
+.text .amount p {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.45rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.text .amount label {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    word-spacing: 1.5px;
+}
+
+.image {
+    flex-basis: 45%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(230deg) saturate(600%) contrast(0.8);
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: block;
+        height: auto;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 70%;
+        margin: 80px auto;
+    }
+
+    .text {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .image img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    .text {
+        padding: 30px 25px;
+        text-align: center;
+    }
+
+    .text .title {
+        font-size: 2rem;
+    }
+
+    .text .description {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        margin-bottom: 45px;
+    }
+
+    .text .amounts {
+        flex-direction: column;
+    }
+
+    .text .amount p {
+        font-size: 1.8rem;
+    }
+
+    .text .amount:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+}
