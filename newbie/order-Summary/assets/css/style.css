@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    max-width: 450px;
+    width: 95vw;
+    border-radius: 20px;
+}
+
+.image {
+    width: 100%;
+    background-image: url(../images/illustration-hero.svg);
+    height: 220px;
+    border-radius: 20px 20px 0 0;
+}
+
+.content {
+    padding: 30px 45px;
+}
+
+.title {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.order .icon {
+    margin-right: 20px;
+    padding-top: .48rem
+}
+
+.order .plan {
+    margin-right: 20px;
+}
+
+.order .title-plan {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.order .price-plan {
+    color: hsl(224, 23%, 55%);
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.order .btn-change {
+    flex: 1;
+    text-align: right;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.order .btn-change:hover {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-process {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.btn-process:hover {
+    background-color: hsl(245, 61%, 63%);
+}
+
+.btn-cancel {
+    color: hsl(224, 23%, 55%);
+    font-size: .95rem;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+}
+
+.btn-cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 20px 30px;
+    }
+
+    .image {
+        height: 200px;
+        width: auto;
+        background-position: center;
+    }
+
+    .order {
+        padding: 10px 20px;
+    }
+
+}
