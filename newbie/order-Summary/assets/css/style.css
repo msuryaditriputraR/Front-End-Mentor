@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+main {
     width: 100vw;
     height: 100vh;
     background-image: url(../images/pattern-background-desktop.svg);
@@ -25,6 +25,7 @@ a {
     max-width: 450px;
     width: 95vw;
     border-radius: 20px;
+    box-shadow: 1px 1px 3px rgba(126, 126, 126, 0.5);
 }
 
 .image {
