@@ -95,10 +95,6 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
-    body {
-        display: block;
-        height: auto;
-    }
 
     .card {
         flex-direction: column-reverse;
@@ -157,5 +153,10 @@ main {
     .text .amount:not(:last-child) {
         margin-bottom: 25px;
     }
+}
 
+@media screen and (min-width: 1000px) {
+    main {
+        height: 100vh;
+    }
 }
