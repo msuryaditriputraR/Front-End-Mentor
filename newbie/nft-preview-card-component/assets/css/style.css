@@ -70,7 +70,7 @@ main {
 }
 
 .card__image .overlay {
-    background-color: var(--c-cyan);
+    background-color: hsl(178deg 100% 50% /50%);
     display: flex;
     align-items: center;
     justify-content: center;
