@@ -2,33 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
 
-  <!-- === ICON === -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<!-- === ICON === -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  <!-- === STYLE CSS === -->
-  <link rel="stylesheet" href="assets/css/style.css">
+	<!-- === STYLE CSS === -->
+	<link rel="stylesheet" href="assets/css/style.css">
 
-  <title>Frontend Mentor | NFT preview card component</title>
+	<title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </style>
 </head>
 
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-
-  Creation of Jules Wyvern
-
+	<main>
+		<div class="card">
+			<div class="card__image">
+				<div class="overlay"></div>
+				<img src="assets/images/image-equilibrium.jpg" alt="Equilibrium">
+				<img src="assets/images/icon-view.svg" alt="Icon View" class="card__icon-preview">
+			</div>
+			<div class="card__body">
+				<h1 class="card__title">Equilibrium #3429</h1>
+				<p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+				<div class="card__info">
+					<span class="card__prize">
+						<img src="assets/images/icon-ethereum.svg" alt="Icon Ethereum"> 0.041ETH
+					</span>
+					<span class="card__time">
+						<img src="assets/images/icon-clock.svg" alt="Icon Clock">
+						3 days left
+					</span>
+				</div>
+			</div>
+			<div class="card__footer">
+				<img src="assets/images/image-avatar.png" alt="Avatar of Jules Wyvern" class="card__avatar">
+				<div class="card__credit">
+					Creation of <span class="card__name">Jules Wyvern</span>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
 
 </html>
