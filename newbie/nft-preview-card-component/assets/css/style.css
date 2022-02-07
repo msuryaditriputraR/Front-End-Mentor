@@ -27,3 +27,131 @@
 html {
     font-size: 10px;
 }
+
+body {
+    font-family: var(--main-font);
+}
+
+/* === REUSABLE CLASS === */
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* === LAYOUTING === */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--c-main-bg);
+    height: 100vh;
+}
+
+/* === CARD === */
+.card {
+    width: 85vw;
+    max-width: 350px;
+    padding: 20px;
+    background-color: var(--c-card-bg);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card__image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__image .overlay {
+    background-color: var(--c-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .3s;
+}
+
+.card__image-img {
+    width: 100%;
+}
+
+.card__title {
+    font-size: 2.2rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--c-white);
+}
+
+.card__description {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: var(--fw-light);
+    color: var(--c-soft-blue);
+    line-height: 1.5;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.card__prize,
+.card__time {
+    display: flex;
+    align-items: center;
+}
+
+.card__prize img,
+.card__time img {
+    margin-right: 5px;
+}
+
+.card__prize {
+    color: var(--c-cyan);
+}
+
+.card__time {
+    color: var(--c-soft-blue);
+}
+
+.card__footer {
+    margin-top: 10px;
+    border-top: 1px solid hsl(215, 15%, 30%);
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card__avatar {
+    max-width: 30px;
+    border: 1px solid var(--c-soft-blue);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card__credit {
+    font-size: 1.6rem;
+    font-weight: var(--fw-light);
+    color: var(--c-soft-blue);
+}
+
+.card__name {
+    color: var(--c-white);
+    font-weight: var(--fw-normal);
+}
+
+/* === STATE === */
+.card__title:hover,
+.card__name:hover {
+    color: var(--c-cyan);
+}
+
+.card__image:hover .overlay {
+    opacity: 1;
+}
