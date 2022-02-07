@@ -88,7 +88,7 @@ main {
 }
 
 .card__description {
-    margin: 10px 0;
+    margin: 10px 0 15px;
     font-size: 1.6rem;
     font-weight: var(--fw-light);
     color: var(--c-soft-blue);
@@ -122,7 +122,7 @@ main {
 
 .card__footer {
     margin-top: 10px;
-    border-top: 1px solid hsl(215, 15%, 30%);
+    border-top: 1px solid hsl(212, 32%, 41%);
     padding-top: 10px;
     display: flex;
     align-items: center;
