@@ -103,10 +103,11 @@ a {
     display: grid;
 }
 
-.container {
+.cards {
     grid-template-columns: 100%;
     border-radius: 10px;
     overflow: hidden;
+
 }
 
 /* === CARD === */
@@ -145,7 +146,7 @@ a {
         padding: 0;
     }
 
-    .container {
+    .cards {
         grid-template-columns: repeat(3, 1fr);
     }
 }
