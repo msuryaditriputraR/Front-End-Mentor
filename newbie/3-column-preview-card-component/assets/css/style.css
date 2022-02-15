@@ -21,9 +21,8 @@
     --ff-paragraphs: 'Lexend Deca', sans-serif;
 
     /* Font Size */
-    --fz-title: 1.25rem;
-    --fz-normal: .938rem;
-    --fz-small: .875rem;
+    --fz-title: 2rem;
+    --fz-paragraph: 1.08rem;
 
     /* Font Weights */
     --fw-regular: 400;
@@ -36,8 +35,110 @@
         /* == TYPOGRAPHY == */
 
         /* Font Size */
-        --fz-title: 1.5rem;
-        --fz-normal: 1rem;
-        --fz-small: .915rem;
+        --fz-title: 2.5rem;
+        --fz-paragraph: 1.3rem;
+    }
+}
+
+/* === BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--c-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* === COMPONENt === */
+.btn {
+    display: inline-block;
+    font-family: var(--ff-paragraphs);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+/* === MODIFIER === */
+.card--orange {
+    background-color: var(--c-orange);
+}
+
+.card--cyan {
+    background-color: var(--c-cyan);
+}
+
+.card--dark-cyan {
+    background-color: var(--c-dark-cyan);
+}
+
+.text--orange {
+    color: var(--c-orange);
+}
+
+.text--cyan {
+    color: var(--c-cyan);
+}
+
+.text--dark-cyan {
+    color: var(--c-dark-cyan);
+}
+
+.btn--white {
+    background-color: #fff;
+}
+
+/* === LAYOUT === */
+.l-grid {
+    display: grid;
+}
+
+.container {
+    grid-template-columns: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* === CARD === */
+.card {
+    max-width: 330px;
+    padding: 30px;
+}
+
+.card__title {
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+    font-size: var(--fz-title);
+    text-transform: uppercase;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.card__description {
+    color: var(--c-white-transparent);
+    font-weight: var(--fw-regular);
+    font-size: var(--fz-paragraph);
+    font-family: var(--ff-paragraphs);
+    line-height: 1.5;
+}
+
+/* === RESPONSIVE === */
+@media screen and (min-width: 1000px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
