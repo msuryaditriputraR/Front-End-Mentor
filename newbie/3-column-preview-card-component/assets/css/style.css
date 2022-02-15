@@ -1,0 +1,43 @@
+/* === GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* === CSS VARIABLES === */
+:root {
+    /* == COLORS == */
+
+    /* Primary */
+    --c-orange: hsl(31, 77%, 52%);
+    --c-cyan: hsl(184, 100%, 22%);
+    --c-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --c-white-transparent: hsla(0, 0%, 100%, 0.75);
+    --c-light-gray: hsl(0, 0%, 95%);
+
+    /* == TYPOGRAPHY == */
+
+    /* Font Family */
+    --ff-title: 'Big Shoulders Display', cursive;
+    --ff-paragraphs: 'Lexend Deca', sans-serif;
+
+    /* Font Size */
+    --fz-title: 1.25rem;
+    --fz-normal: .938rem;
+    --fz-small: .875rem;
+
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* === Responsive Variabels === */
+@media screen and (min-width: 735px) {
+    :root {
+        /* == TYPOGRAPHY == */
+
+        /* Font Size */
+        --fz-title: 1.5rem;
+        --fz-normal: 1rem;
+        --fz-small: .915rem;
+    }
+}
