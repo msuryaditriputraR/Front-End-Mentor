@@ -67,6 +67,7 @@ a {
     padding: 10px 15px;
     border-radius: 30px;
     margin-top: 20px;
+    transition: .3s;
 }
 
 /* === MODIFIER === */
