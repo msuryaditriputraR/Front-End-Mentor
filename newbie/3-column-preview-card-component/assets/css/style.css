@@ -36,7 +36,7 @@
 
         /* Font Size */
         --fz-title: 2.5rem;
-        --fz-paragraph: 1.3rem;
+        --fz-paragraph: 1.2rem;
     }
 }
 
@@ -148,5 +148,9 @@ a {
 
     .cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .btn {
+        margin-top: 55px;
     }
 }
