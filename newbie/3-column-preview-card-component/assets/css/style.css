@@ -60,7 +60,7 @@ a {
     text-decoration: none;
 }
 
-/* === COMPONENt === */
+/* === COMPONENT === */
 .btn {
     display: inline-block;
     font-family: var(--ff-paragraphs);
@@ -130,6 +130,13 @@ a {
     font-size: var(--fz-paragraph);
     font-family: var(--ff-paragraphs);
     line-height: 1.5;
+}
+
+/* === STATE === */
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--c-white-transparent);
+    color: var(--c-white-transparent);
 }
 
 /* === RESPONSIVE === */
