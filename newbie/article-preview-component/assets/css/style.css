@@ -1,0 +1,37 @@
+/* === GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+/* === CSS VARIABLES === */
+:root {
+    /* == COLORS == */
+    --c-very-dark-blue: hsl(217, 19%, 35%);
+    --c-dark-blue: hsl(214, 17%, 51%);
+    --c-blue: hsl(212, 23%, 69%);
+    --c-light-blue: hsl(210, 46%, 95%);
+
+    /* == TYPOGRAPHY == */
+
+    /* Font Family */
+    --ff-main-font: 'Manrope', sans-serif;
+
+    /* Font Weight */
+    --ff-medium: 500;
+    --ff-bold: 700;
+
+    /* Font Size */
+    --fz-heading: 1.88rem;
+    --fz-paragraph: .89rem;
+
+
+}
+
+/* === RESPONSIVE VARIABLES === */
+@media screen and (min-width: 785x) {
+    :root {
+        /* == TYPOGRAPHY == */
+
+        /* Font Size */
+        --fz-title: 2.5rem;
+        --fz-paragraph: 1.2rem;
+    }
+}
