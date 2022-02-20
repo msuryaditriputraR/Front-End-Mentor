@@ -15,8 +15,8 @@
     --ff-main-font: 'Manrope', sans-serif;
 
     /* Font Weight */
-    --ff-medium: 500;
-    --ff-bold: 700;
+    --fw-medium: 500;
+    --fw-bold: 700;
 
     /* Font Size */
     --fz-heading: 1.88rem;
@@ -34,4 +34,21 @@
         --fz-title: 2.5rem;
         --fz-paragraph: 1.2rem;
     }
+}
+
+/* === RESET CSS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-main-font);
+    background-color: var(--c-light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+
 }
