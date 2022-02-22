@@ -164,7 +164,7 @@ img {
     visibility: visible;
 }
 
-.share label {
+.share p {
     color: var(--c-blue);
     letter-spacing: 5px;
 }
