@@ -52,8 +52,27 @@ img {
     width: 100%;
 }
 
+/* === MODIFIER === */
+.bg-light {
+    background-color: var(--c-light-blue);
+}
+
+.bg-dark {
+    background-color: var(--c-dark-blue);
+}
+
+.icon-dark {
+    color: var(--c-very-dark-blue);
+}
+
+.icon-light {
+    color: var(--c-light-blue);
+}
+
+
 /* === CARD === */
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 700px;
@@ -123,14 +142,38 @@ img {
     display: inline-block;
     margin-left: auto;
     border: none;
-    background-color: var(--c-light-blue);
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.icon-share {
-    color: var(--c-very-dark-blue);
+.share {
+    position: absolute;
+    width: 100%;
+    bottom: -25%;
+    visibility: hidden;
+    background-color: var(--c-very-dark-blue);
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+
+.share.active {
+    bottom: 0;
+    visibility: visible;
+}
+
+.share label {
+    color: var(--c-blue);
+    letter-spacing: 5px;
+    margin-right: 25px;
+}
+
+.icon-medsos {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 25px;
 }
 
 @media screen and (min-width: 785px) {
