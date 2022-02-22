@@ -129,6 +129,10 @@ img {
     cursor: pointer;
 }
 
+.icon-share {
+    color: var(--c-very-dark-blue);
+}
+
 @media screen and (min-width: 785px) {
 
     .card {
