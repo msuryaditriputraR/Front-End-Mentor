@@ -31,3 +31,14 @@
     --fz-small: .98rem;
 
 }
+
+/* === RESET CSS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-main-font);
+}
