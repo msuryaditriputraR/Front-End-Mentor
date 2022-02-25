@@ -1,0 +1,33 @@
+/* === GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/* === CSS VARIABELS === */
+:root {
+    /* == COLORS == */
+
+    /* Primary */
+    --c-dark-magenta: hsl(300, 43%, 22%);
+    --c-soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --c-dark-grayish: hsl(303, 10%, 53%);
+    --c-light-grayish: hsl(300, 24%, 96%);
+    --c-white: hsl(0, 0%, 100%);
+
+
+    /* == TYPOGRAPHY == */
+
+    /* Font Family */
+    --ff-main-font: 'Spartan', sans-serif;
+
+    /* Font Weight */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    /* Font Size */
+    --fz-big: 2.5rem;
+    --fz-normal: 1.1rem;
+    --fz-small: .98rem;
+
+}
