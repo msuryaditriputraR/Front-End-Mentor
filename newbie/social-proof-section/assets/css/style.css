@@ -26,9 +26,9 @@
     --fw-bold: 700;
 
     /* Font Size */
-    --fz-big: 2.5rem;
-    --fz-normal: 1.1rem;
-    --fz-small: .98rem;
+    --fz-big: 1.95rem;
+    --fz-normal: .95rem;
+    --fz-small: .9rem;
 
 }
 
@@ -41,4 +41,61 @@
 
 body {
     font-family: var(--ff-main-font);
+}
+
+/* === SECTION TOP === */
+.top {
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+    background-repeat: no-repeat;
+    padding: 16px;
+    padding-top: 80px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    color: var(--c-dark-magenta);
+    font-size: var(--fz-big);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: var(--c-dark-grayish);
+    font-weight: var(--fw-medium);
+    font-size: var(--fz-normal);
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.rates {
+    display: flex;
+    flex-direction: column;
+}
+
+.rate {
+    background-color: var(--c-light-grayish);
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+.rate:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.star:not(:last-child) {
+    margin-right: 5px;
+}
+
+.rate-text {
+    color: var(--c-dark-magenta);
+    font-weight: var(--fw-bold);
+    font-size: var(--fz-normal);
+    margin-top: 10px;
 }
