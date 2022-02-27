@@ -87,6 +87,10 @@ header {
     text-align: center;
 }
 
+.d-flex {
+    display: flex;
+}
+
 /* === HEADER === */
 .header__title {
     color: var(--c-very-dark-blue);
