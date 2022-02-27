@@ -41,6 +41,7 @@
         /* Font Size */
         --fz-big: 2.375rem;
         --fz-normal: 1rem;
+        --fz-small: .9rem;
     }
 }
 
