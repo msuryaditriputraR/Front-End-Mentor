@@ -109,3 +109,38 @@ header {
     font-size: var(--fz-normal);
     margin-bottom: 4rem;
 }
+
+/* === CARDS === */
+.cards {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.875rem;
+    border-radius: .476rem;
+    box-shadow: 1px 10px 15px -3px hsla(191, 34%, 61%, 0.4);
+    border-top-width: 5px;
+    border-top-style: solid;
+}
+
+.card__title {
+    color: var(--c-very-dark-blue);
+    font-size: var(--fz-medium);
+    font-weight: var(--fw-semi-bold);
+    margin-bottom: .345rem;
+}
+
+.card__paragraph {
+    color: var(--c-grayish-blue);
+    font-size: var(--fz-small);
+    margin-bottom: 2.135rem;
+}
+
+.card__icon {
+    margin-left: auto;
+    width: 4.375rem;
+    height: 4.375rem;
+}
