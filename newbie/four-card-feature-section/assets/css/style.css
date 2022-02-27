@@ -87,10 +87,6 @@ header {
     text-align: center;
 }
 
-.d-flex {
-    display: flex;
-}
-
 /* === HEADER === */
 .header__title {
     color: var(--c-very-dark-blue);
@@ -107,6 +103,8 @@ header {
     color: var(--c-grayish-blue);
     font-weight: var(--fw-regular);
     font-size: var(--fz-normal);
+    max-width: 55ch;
+    margin: auto;
     margin-bottom: 4rem;
 }
 
@@ -140,6 +138,7 @@ header {
 }
 
 .card__icon {
+    display: block;
     margin-left: auto;
     width: 4.375rem;
     height: 4.375rem;
