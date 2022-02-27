@@ -86,3 +86,22 @@ main {
 header {
     text-align: center;
 }
+
+/* === HEADER === */
+.header__title {
+    color: var(--c-very-dark-blue);
+    font-weight: var(--fw-light);
+    font-size: var(--fz-big);
+    margin-bottom: .985rem;
+}
+
+.header__title-highlight {
+    font-weight: var(--fw-semi-bold);
+}
+
+.header__paragraph {
+    color: var(--c-grayish-blue);
+    font-weight: var(--fw-regular);
+    font-size: var(--fz-normal);
+    margin-bottom: 4rem;
+}
