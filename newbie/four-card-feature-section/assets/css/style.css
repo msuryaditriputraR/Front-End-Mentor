@@ -53,6 +53,7 @@
 
 body {
     font-family: var(--ff-main-font);
+    background-color: var(--c-very-light-gray);
 }
 
 img {
