@@ -54,3 +54,20 @@
 body {
     font-family: var(--ff-main-font);
 }
+
+/* === MODIFIER === */
+.border-cyan {
+    border-color: var(--c-cyan);
+}
+
+.border-red {
+    border-color: var(--c-red);
+}
+
+.border-orange {
+    border-color: var(--c-orange);
+}
+
+.border-blue {
+    border-color: var(--c-blue);
+}
