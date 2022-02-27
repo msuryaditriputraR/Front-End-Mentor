@@ -75,3 +75,13 @@ img {
 .border-blue {
     border-color: var(--c-blue);
 }
+
+/* === LAYOUTING === */
+main {
+    margin: 80px auto;
+    width: 80vw;
+}
+
+header {
+    text-align: center;
+}
