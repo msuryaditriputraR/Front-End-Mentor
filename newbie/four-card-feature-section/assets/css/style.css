@@ -55,6 +55,10 @@ body {
     font-family: var(--ff-main-font);
 }
 
+img {
+    max-width: 100%;
+}
+
 /* === MODIFIER === */
 .border-cyan {
     border-color: var(--c-cyan);
