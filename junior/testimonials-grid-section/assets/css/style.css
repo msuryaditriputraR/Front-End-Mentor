@@ -52,3 +52,20 @@ main {
 .l-grid {
     display: grid;
 }
+
+/* === MODIFIER === */
+.card--purple {
+    background-color: var(--c-moderate-violet);
+}
+
+.card--grayish-blue {
+    background-color: var(--c-dark-grayish-blue);
+}
+
+.card--white {
+    background-color: var(--c-white);
+}
+
+.card--blackish-blue {
+    background-color: var(--c-dark-blackish-blue);
+}
