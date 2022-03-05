@@ -27,3 +27,17 @@
     --c-dark-grayish-blue: hsl(217, 19%, 24%);
     --c-dark-blue: hsl(218, 23%, 16%);
 }
+
+/* === BASE CSS === */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--c-dark-blue);
+    font-family: var(--ff-main-font);
+}
