@@ -71,9 +71,60 @@ main {
 }
 
 .card--light {
-    color: var(--c-white);
+    color: var(--c-light-grayish-blue);
 }
 
 .card--dark {
     color: var(--c-dark-grayish-blue);
+}
+
+/* === CARDS === */
+.cards {
+    grid-template-columns: 100%;
+    width: 90vw;
+    gap: 1.5rem;
+    margin: 4.5rem auto;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: .6rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.25rem;
+    line-height: 1.4;
+}
+
+.card__profile {
+    display: flex;
+    align-items: center;
+}
+
+.card__avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+
+.card__name {
+    font-size: var(--fz-normal);
+    font-weight: var(--fw-semi-bold);
+}
+
+.card__status {
+    font-size: var(--fz-small);
+    font-weight: var(--fw-medium);
+    opacity: 50%;
+}
+
+.card__title {
+    font-size: var(--fz-big);
+    font-weight: var(--fw-semi-bold);
+}
+
+.card__quote {
+    font-size: var(--fz-normal);
+    opacity: 70%;
 }
