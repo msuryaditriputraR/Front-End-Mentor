@@ -9,8 +9,8 @@
     --ff-main-font: 'Manrope', sans-serif;
 
     /* Font Size */
-    --fz-big: 2rem;
-    --fz-normal: .985rem;
+    --fz-big: 1.385rem;
+    --fz-normal: .875rem;
 
     /* Font Weight */
     --fw-extra-bold: 800;
@@ -42,9 +42,76 @@ body {
     font-family: var(--ff-main-font);
 }
 
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
 /* === LAYOUT === */
 main {
     display: grid;
     min-height: 100vh;
     place-items: center;
+}
+
+/* === ADVICE CARD === */
+.advice {
+    background-color: var(--c-dark-grayish-blue);
+    border-radius: 1rem;
+    max-width: 33.75rem;
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.25rem;
+    text-align: center;
+    position: relative;
+}
+
+.advice__title {
+    font-size: var(--fz-normal);
+    color: var(--c-neon-green);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.advice__qoute {
+    color: var(--c-light-cyan);
+    font-size: var(--fz-big);
+    font-weight: var(--fw-extra-bold);
+}
+
+.advice__divider {
+    background-image: url(../images/pattern-divider-mobile.svg);
+    background-position: center;
+    width: 100%;
+    height: 15px;
+    margin-bottom: 2rem;
+}
+
+.advice__dice {
+    background-color: var(--c-neon-green);
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-image: url(../images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .3s;
+}
+
+/* === STATE === */
+.advice__dice:hover {
+    box-shadow: 0px 0px 30px hsla(150, 100%, 66%, .6);
+    transform: translate(-50%, 50%) scale(1.05) rotate(360deg);
 }
