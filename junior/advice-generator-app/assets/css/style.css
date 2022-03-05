@@ -28,6 +28,17 @@
     --c-dark-blue: hsl(218, 23%, 16%);
 }
 
+/* === RESPONSIVE VARIABLE === */
+@media screen and (min-width: 785px) {
+    :root {
+        /* == TYPOGRAPHY == */
+
+        /* Font Size */
+        --fz-big: 1.785rem;
+        --fz-normal: .985rem;
+    }
+}
+
 /* === BASE CSS === */
 *,
 *::before,
