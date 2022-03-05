@@ -41,3 +41,14 @@ body {
     font-family: var(--ff-main-font);
     background-color: var(--c-light-grayish-blue);
 }
+
+/* === LAYOUTING === */
+main {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.l-grid {
+    display: grid;
+}
