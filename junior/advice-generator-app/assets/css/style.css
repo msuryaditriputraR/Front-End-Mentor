@@ -41,3 +41,10 @@ body {
     background-color: var(--c-dark-blue);
     font-family: var(--ff-main-font);
 }
+
+/* === LAYOUT === */
+main {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
