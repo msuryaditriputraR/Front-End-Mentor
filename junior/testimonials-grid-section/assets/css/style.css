@@ -69,3 +69,11 @@ main {
 .card--blackish-blue {
     background-color: var(--c-dark-blackish-blue);
 }
+
+.card--light {
+    color: var(--c-white);
+}
+
+.card--dark {
+    color: var(--c-dark-grayish-blue);
+}
