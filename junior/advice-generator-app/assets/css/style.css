@@ -126,3 +126,10 @@ main {
     box-shadow: 0px 0px 30px hsla(150, 100%, 66%, .6);
     transform: translate(-50%, 50%) scale(1.05) rotate(360deg);
 }
+
+/* === RESPONSIVE DESIGN === */
+@media screen and (min-width: 785px) {
+    .advice__divider {
+        background-image: url(../images/pattern-divider-desktop.svg);
+    }
+}
