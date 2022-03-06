@@ -9,8 +9,8 @@
     --ff-main-font: 'Barlow Semi Condensed', sans-serif;
 
     /* Font Size */
-    --fz-big: 1.25rem;
-    --fz-normal: .8125rem;
+    --fz-big: 1.305rem;
+    --fz-normal: .8515rem;
     --fz-small: .6875rem;
 
     /* Font Weight */
@@ -75,7 +75,7 @@ main {
 }
 
 .card--dark {
-    color: var(--c-dark-grayish-blue);
+    color: red;
 }
 
 /* === CARDS === */
@@ -92,7 +92,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     gap: 1.25rem;
-    line-height: 1.4;
+    line-height: 1.35;
 }
 
 .card__profile {
@@ -126,5 +126,6 @@ main {
 
 .card__quote {
     font-size: var(--fz-normal);
+    font-weight: var(--fw-medium);
     opacity: 70%;
 }
