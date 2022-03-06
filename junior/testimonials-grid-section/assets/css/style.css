@@ -75,7 +75,7 @@ main {
 }
 
 .card--dark {
-    color: red;
+    color: var(--c-dark-grayish-blue);
 }
 
 /* === CARDS === */
