@@ -129,3 +129,10 @@ main {
     font-weight: var(--fw-medium);
     opacity: 70%;
 }
+
+/* === CARD PURPLE === */
+.card--purple {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-position: right 1.5rem top;
+    background-repeat: no-repeat;
+}
