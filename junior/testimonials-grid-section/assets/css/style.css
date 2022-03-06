@@ -137,3 +137,45 @@ main {
     background-position: right 1.5rem top;
     background-repeat: no-repeat;
 }
+
+/* === RESPONSIVE DESIGN === */
+
+/* == MEDIUM DEVICE == */
+@media screen and (min-width: 785px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card--purple {
+        background-position: right 5rem top;
+        grid-column: 1 / 3;
+    }
+
+    .card--grayish-blue {
+        grid-column: 3 / 4;
+    }
+
+    .card--white:first-child {
+        grid-column: 1 / 2;
+    }
+
+    .card--blackish-blue {
+        grid-column: 2 / 4;
+    }
+
+    .card--white:last-child {
+        grid-column: 1 / 4;
+    }
+}
+
+/* === LARGE DEVICE === */
+@media screen and (min-width: 1000px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card--white:last-child {
+        grid-row: 1 / 3;
+        grid-column: 4;
+    }
+}
