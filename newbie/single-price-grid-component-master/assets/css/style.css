@@ -44,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 4.5rem 0;
 }
 
 /* === MODIFIER CLASS === */
