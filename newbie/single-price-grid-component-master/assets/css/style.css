@@ -1,2 +1,8 @@
 /* === GOOGLE FONT === */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* === CSS VARIABLES === */
+:root {
+    /* == TYPOGRAPHY == */
+    --ff-main-font: 'Karla', sans-serif;
+}
