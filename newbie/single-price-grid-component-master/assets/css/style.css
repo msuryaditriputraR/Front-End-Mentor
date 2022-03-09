@@ -63,6 +63,14 @@ body {
     color: var(--c-bright-yellow);
 }
 
+.text--grayish-blue {
+    color: var(--c-grayish-blue)
+}
+
+.text--gray {
+    color: var(--c-light-gray)
+}
+
 /* === LAYOUTING === */
 .l-grid {
     display: grid;
