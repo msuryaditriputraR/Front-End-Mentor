@@ -93,7 +93,7 @@ main {
     flex-flow: column wrap;
     gap: 1.25rem;
     line-height: 1.35;
-    box-shadow: 0 3px 5px hsla(217, 19%, 35%, .2);
+    box-shadow: 2.5rem 3.75rem 3.125rem -2.938rem rgb(72 85 106 / 25%);
 }
 
 .card__profile {
