@@ -110,6 +110,10 @@ body {
     line-height: 1.5;
 }
 
+.card__description:nth-of-type(2) {
+    font-size: calc(var(--fz-normal) + .1rem);
+}
+
 .card__price {
     color: hsla(204, 43%, 93%, .8);
     display: flex;
