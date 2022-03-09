@@ -4,5 +4,28 @@
 /* === CSS VARIABLES === */
 :root {
     /* == TYPOGRAPHY == */
+
+    /* Font Family */
     --ff-main-font: 'Karla', sans-serif;
+
+    /* Font Size */
+    --fz-bigger: 2rem;
+    --fz-big: 1.5rem;
+    --fz-medium: 1.125rem;
+    --fz-normal: 1rem;
+    --fz-small: .875rem;
+
+    /* Font Weight */
+    --fw-regular: 400;
+    --fw-semi-bold: 700;
+
+    /* == COLORS == */
+
+    /* Primary */
+    --c-cyan: hsl(179, 62%, 43%);
+    --c-bright-yellow: hsl(71, 73%, 54%);
+
+    /* Neutral */
+    --c-light-gray: hsl(204, 43%, 93%);
+    --c-grayish-blue: hsl(218, 22%, 67%);
 }
