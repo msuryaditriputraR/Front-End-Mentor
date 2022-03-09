@@ -157,3 +157,12 @@ body {
 .card--cyan:last-child .overlay {
     background-color: hsla(0, 0%, 100%, 0.15);
 }
+
+/* === RESPONSIVE DESIGN === */
+.cards {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card--white {
+    grid-column: 1/3;
+}
