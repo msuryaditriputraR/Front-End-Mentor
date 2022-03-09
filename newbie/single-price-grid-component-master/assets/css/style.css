@@ -76,3 +76,28 @@ body {
     border-radius: .3rem;
     overflow: hidden;
 }
+
+/* === CARD === */
+.card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card__title {
+    font-size: var(--fz-big);
+    color: var(--c-cyan);
+    font-weight: var(--fw-semi-bold);
+}
+
+.card__sub-title {
+    font-size: var(--fz-medium);
+    font-weight: var(--fw-semi-bold);
+}
+
+.card__description {
+    font-size: var(--fz-normal);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+}
