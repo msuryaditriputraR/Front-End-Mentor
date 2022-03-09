@@ -47,6 +47,15 @@ body {
     padding: 4.5rem 0;
 }
 
+/* === REUSABLE CLASS === */
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 /* === MODIFIER CLASS === */
 .card--white {
     background-color: white;
@@ -125,4 +134,13 @@ body {
     font-size: var(--fz-bigger);
     font-weight: var(--fw-semi-bold);
     margin-right: .5rem;
+}
+
+/* == LAST CARD CYAN == */
+.card--cyan:last-child {
+    position: relative;
+}
+
+.card--cyan:last-child .overlay {
+    background-color: hsla(0, 0%, 100%, 0.15);
 }
