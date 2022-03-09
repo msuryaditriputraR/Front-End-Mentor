@@ -73,4 +73,6 @@ body {
     width: 90vmin;
     max-width: 39.688rem;
     box-shadow: 0 0.938rem 1.875rem rgb(0 81 171 / 15%);
+    border-radius: .3rem;
+    overflow: hidden;
 }
