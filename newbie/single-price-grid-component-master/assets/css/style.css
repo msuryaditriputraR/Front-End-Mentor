@@ -29,3 +29,19 @@
     --c-light-gray: hsl(204, 43%, 93%);
     --c-grayish-blue: hsl(218, 22%, 67%);
 }
+
+/* === BASE CSS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-main-font);
+    background-color: var(--c-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
