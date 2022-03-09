@@ -46,6 +46,23 @@ body {
     min-height: 100vh;
 }
 
+/* === MODIFIER CLASS === */
+.card--white {
+    background-color: white;
+}
+
+.card--cyan {
+    background-color: var(--c-cyan);
+}
+
+.text--white {
+    color: white;
+}
+
+.text--yellow {
+    color: var(--c-bright-yellow);
+}
+
 /* === LAYOUTING === */
 .l-grid {
     display: grid;
