@@ -109,3 +109,15 @@ body {
     font-weight: var(--fw-regular);
     line-height: 1.5;
 }
+
+.card__price {
+    color: hsla(204, 43%, 93%, .8);
+    display: flex;
+    align-items: center;
+}
+
+.card__price strong {
+    font-size: var(--fz-bigger);
+    font-weight: var(--fw-semi-bold);
+    margin-right: .5rem;
+}
