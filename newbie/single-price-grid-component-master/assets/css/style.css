@@ -45,3 +45,15 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+/* === LAYOUTING === */
+.l-grid {
+    display: grid;
+}
+
+.cards {
+    grid-template-columns: 100%;
+    width: 90vmin;
+    max-width: 39.688rem;
+    box-shadow: 0 0.938rem 1.875rem rgb(0 81 171 / 15%);
+}
