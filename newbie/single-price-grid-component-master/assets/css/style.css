@@ -136,6 +136,19 @@ body {
     margin-right: .5rem;
 }
 
+.btn__sign-up {
+    background-color: var(--c-bright-yellow);
+    font-weight: var(--fw-semi-bold);
+    color: white;
+    width: 100%;
+    min-width: 55px;
+    padding: .85rem 0;
+    border-radius: .25rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 .625rem .625rem rgb(0 0 0 / 10%);
+}
+
 /* == LAST CARD CYAN == */
 .card--cyan:last-child {
     position: relative;
