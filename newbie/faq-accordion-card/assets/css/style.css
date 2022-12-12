@@ -1,0 +1,117 @@
+/* ==================== GOOGLE FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap');
+
+/* ==================== VARIABLE CSS ===================== */
+:root {
+    /* ==================== COLORS ===================== */
+    --title-color: hsl(238, 29%, 16%);
+    --title-color-second: hsl(237, 12%, 33%);
+    --text-color: hsl(240, 6%, 50%);
+    --red-color: hsl(14, 88%, 65%);
+    --container-color: hsl(0, 0%, 100%);
+
+    /* ==================== TYPOGRAPHY ===================== */
+    /* Font Size */
+    --body-font: 'Kumbh Sans', sans-serif;
+    --big-font-size: 2rem;
+    --normal-font-size: .895rem;
+
+    /* Font Weight */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+/* ==================== BASE ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+/* ==================== CARD ===================== */
+.card {
+    position: relative;
+    background-color: var(--container-color);
+    width: 90vw;
+    padding: 2.5rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 40px hsla(238, 29%, 16%, .35);
+    margin-top: 5rem;
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    transform: translateY(-60%);
+}
+
+.card__image {
+    filter: drop-shadow(0 30px 2px hsla(240, 73%, 65%, .15));
+}
+
+.card__articles {
+    margin-top: 5.5rem;
+}
+
+.card__title {
+    font-size: var(--big-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+
+.card__article {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-block: 1rem;
+}
+
+.card__article-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.card__article-title {
+    font-size: var(--normal-font-size);
+    color: var(--title-color-second);
+    font-weight: var(--font-medium);
+}
+
+.card__article-desc {
+    margin-top: 1rem;
+    max-width: 32ch;
+    line-height: 1.5;
+}
+
+.card__article-title:hover {
+    color: var(--red-color);
+}
+
+.card__article-icon {
+    color: var(--red-color);
+}
+
+.card__article-content {
+    height: 0;
+    overflow: hidden;
+}
