@@ -3,6 +3,11 @@ function toggleAccordion(accordionSelector, headerSelector, contentSelector) {
     const accordion = document.querySelectorAll(accordionSelector);
     const accordionHeader = document.querySelectorAll(headerSelector);
 
+    // INITIAL STATE
+    accordion[0].classList.add("accordion-open");
+    const firstContent = accordion[0].querySelector(contentSelector);
+    firstContent.style.height = firstContent.scrollHeight + "px";
+
     accordionHeader.forEach((ah) => {
         ah.addEventListener("click", function () {
             const parent = this.parentElement;
