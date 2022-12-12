@@ -69,7 +69,7 @@ body {
     filter: drop-shadow(0 30px 2px hsla(240, 73%, 65%, .15));
 }
 
-.card__articles {
+.card__accordions {
     margin-top: 5.5rem;
 }
 
@@ -80,38 +80,38 @@ body {
     text-align: center;
 }
 
-.card__article {
+.card__accordion {
     border-bottom: 1px solid hsl(240, 5%, 91%);
     padding-block: 1rem;
 }
 
-.card__article-header {
+.card__accordion-header {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
 
-.card__article-title {
+.card__accordion-title {
     font-size: var(--normal-font-size);
     color: var(--title-color-second);
     font-weight: var(--font-medium);
 }
 
-.card__article-desc {
+.card__accordion-desc {
     margin-top: 1rem;
     max-width: 32ch;
     line-height: 1.5;
 }
 
-.card__article-title:hover {
+.card__accordion-title:hover {
     color: var(--red-color);
 }
 
-.card__article-icon {
+.card__accordion-icon {
     color: var(--red-color);
 }
 
-.card__article-content {
+.card__accordion-content {
     height: 0;
     overflow: hidden;
 }
