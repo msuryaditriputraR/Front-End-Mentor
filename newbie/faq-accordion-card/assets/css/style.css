@@ -53,19 +53,17 @@ body {
     position: relative;
     background-color: var(--container-color);
     width: 90vw;
+    max-width: 360px;
     padding: 2.5rem 1.5rem;
     border-radius: 2rem;
     box-shadow: 0 8px 40px hsla(238, 29%, 16%, .35);
-    margin-top: 5rem;
+    margin-block: 10rem 5rem;
 }
 
 .card__image {
     position: absolute;
     top: 0;
     transform: translateY(-60%);
-}
-
-.card__image {
     filter: drop-shadow(0 30px 2px hsla(240, 73%, 65%, .15));
 }
 
@@ -78,6 +76,7 @@ body {
     color: var(--title-color);
     font-weight: var(--font-medium);
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .card__accordion {
@@ -88,6 +87,7 @@ body {
 .card__accordion-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
 }
 
