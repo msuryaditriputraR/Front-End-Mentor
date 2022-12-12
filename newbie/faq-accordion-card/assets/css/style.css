@@ -76,7 +76,7 @@ body {
 .card__title {
     font-size: var(--big-font-size);
     color: var(--title-color);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-medium);
     text-align: center;
 }
 
@@ -95,6 +95,7 @@ body {
     font-size: var(--normal-font-size);
     color: var(--title-color-second);
     font-weight: var(--font-medium);
+    transition: .3s;
 }
 
 .card__accordion-desc {
@@ -109,9 +110,21 @@ body {
 
 .card__accordion-icon {
     color: var(--red-color);
+    transition: .3s;
 }
 
 .card__accordion-content {
     height: 0;
     overflow: hidden;
+    transition: .3s;
+}
+
+/* ACCORDION OPEN */
+.accordion-open .card__accordion-title {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+.accordion-open .card__accordion-icon {
+    transform: rotate(180deg);
 }
