@@ -1,0 +1,25 @@
+@use 'typography' as typo;
+
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: typo.$main-font;
+    font-weight: map-get(typo.$font-weights, "regular");
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
