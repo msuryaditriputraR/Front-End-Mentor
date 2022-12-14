@@ -1,0 +1,8 @@
+@mixin init($textColor: #000, $bgColor: #fff, $padding: 0px, $radius: initial, $font-size: 1rem) {
+    color: $textColor;
+    background-color: $bgColor;
+    padding: $padding;
+    border-radius: $radius;
+    font-size: $font-size;
+    cursor: pointer;
+}
