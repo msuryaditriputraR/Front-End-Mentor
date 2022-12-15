@@ -7,4 +7,6 @@
     @if $align != initial{
         align-items: $align;
     }
+
+    @content;
 }
