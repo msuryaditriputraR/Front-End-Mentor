@@ -1,7 +1,10 @@
-@mixin init($justify: initial, $align: initial, $direction: row, $wrap: initial) {
+@mixin init($justify: initial, $align: initial) {
     display: flex;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-    justify-content: $justify;
-    align-items: $align;
+    @if $justify != initial{
+        justify-content: $justify;
+    }
+
+    @if $align != initial{
+        align-items: $align;
+    }
 }
