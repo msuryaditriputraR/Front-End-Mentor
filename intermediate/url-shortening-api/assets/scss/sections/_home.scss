@@ -1,9 +1,10 @@
 .home {
     display: grid;
-    margin-bottom: 3.5rem;
+    position: relative;
+    padding-bottom: 10.5rem;
 
     &__img {
-        overflow: hidden;
+        overflow-x: hidden;
         margin-left: 1.5rem;
         padding-block: 2rem 3.5rem;
 
@@ -52,7 +53,6 @@
         grid-template-columns: repeat(2, max-content);
         justify-content: space-between;
         align-items: center;
-        overflow-x: hidden;
 
         .container {
             margin-right: 0;
@@ -73,5 +73,49 @@
         &__info {
             text-align: initial;
         }
+    }
+}
+
+/* ==================== SHORTER ===================== */
+.shorter {
+    position: absolute;
+    max-width: 1148px;
+    width: 90vw;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 1rem;
+    border-radius: .5rem;
+
+    background: {
+        image: url('../images/bg-shorten-mobile.svg');
+        size: cover;
+        color: $first-color;
+        position: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: .8rem;
+    }
+
+    &__input {
+        font-family: $main-font;
+        color: $text-color;
+        font-weight: map-get($map: $font-weights, $key: "medium");
+    }
+
+    &__btn {
+        @include button
+    }
+
+    &__input,
+    &__btn {
+        border: none;
+        outline: none;
+        border-radius: .25rem;
+        padding: .8rem 1rem;
+        font-size: var(--normal-font-size);
     }
 }

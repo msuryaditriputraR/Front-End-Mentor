@@ -47,7 +47,7 @@ img {
 }
 
 .container {
-  max-width: 1148;
+  max-width: 1148px;
   margin-inline: 1.5rem;
 }
 
@@ -163,10 +163,11 @@ main {
 
 .home {
   display: grid;
-  margin-bottom: 3.5rem;
+  position: relative;
+  padding-bottom: 10.5rem;
 }
 .home__img {
-  overflow: hidden;
+  overflow-x: hidden;
   margin-left: 1.5rem;
   padding-block: 2rem 3.5rem;
 }
@@ -209,7 +210,6 @@ main {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
     align-items: center;
-    overflow-x: hidden;
   }
   .home .container {
     margin-right: 0;
@@ -226,6 +226,43 @@ main {
   .home__info {
     text-align: initial;
   }
+}
+/* ==================== SHORTER ===================== */
+.shorter {
+  position: absolute;
+  max-width: 1148px;
+  width: 90vw;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-image: url("../images/bg-shorten-mobile.svg");
+  background-size: cover;
+  background-color: #3b3054;
+  background-position: center;
+}
+.shorter__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+.shorter__input {
+  font-family: "Poppins", sans-serif;
+  color: #9e9aa7;
+  font-weight: 500;
+}
+.shorter__btn {
+  background-color: #2acfcf;
+  color: white;
+  font-weight: 700;
+}
+.shorter__input, .shorter__btn {
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  padding: 0.8rem 1rem;
+  font-size: var(--normal-font-size);
 }
 
 /*# sourceMappingURL=main.css.map */
