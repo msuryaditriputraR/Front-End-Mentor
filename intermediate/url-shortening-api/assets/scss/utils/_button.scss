@@ -1,8 +1,7 @@
-@mixin init($textColor: #000, $bgColor: #fff, $padding: 0px, $radius: initial, $font-size: 1rem) {
-    color: $textColor;
-    background-color: $bgColor;
-    padding: $padding;
-    border-radius: $radius;
-    font-size: $font-size;
-    cursor: pointer;
+@mixin button(){
+    background-color: $second-color;
+    color: $white-color;
+    font-weight: map-get($map: $font-weights, $key: "bold");
+
+    @content;
 }

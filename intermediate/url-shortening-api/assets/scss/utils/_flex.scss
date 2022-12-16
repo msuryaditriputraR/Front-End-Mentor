@@ -1,4 +1,4 @@
-@mixin init($justify: initial, $align: initial) {
+@mixin flex($justify: initial, $align: initial) {
     display: flex;
     @if $justify != initial{
         justify-content: $justify;

@@ -1,4 +1,4 @@
-@mixin init($width, $height, $radius: 0){
+@mixin box($width, $height, $radius: 0){
     width: $width;
     height: $height;
 
