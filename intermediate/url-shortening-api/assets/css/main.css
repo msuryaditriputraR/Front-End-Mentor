@@ -87,6 +87,7 @@ img {
   background-color: #2acfcf;
   color: white;
   font-weight: 700;
+  cursor: pointer;
   padding-block: 1rem;
   border-radius: 5rem;
 }
@@ -200,6 +201,7 @@ main {
   background-color: #2acfcf;
   color: white;
   font-weight: 700;
+  cursor: pointer;
   font-weight: 600;
   padding: 0.65rem 1.8rem;
   border-radius: 2.5rem;
@@ -256,6 +258,7 @@ main {
   background-color: #2acfcf;
   color: white;
   font-weight: 700;
+  cursor: pointer;
 }
 .shorter__input, .shorter__btn {
   border: none;

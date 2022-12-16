@@ -1,7 +1,8 @@
-@mixin button(){
+@mixin button() {
     background-color: $second-color;
     color: $white-color;
     font-weight: map-get($map: $font-weights, $key: "bold");
+    cursor: pointer;
 
     @content;
 }
