@@ -1,0 +1,39 @@
+.home {
+    display: grid;
+    margin-bottom: 3.5rem;
+
+    &__img {
+        overflow: hidden;
+        margin-left: 1.5rem;
+        padding-block: 3.5rem;
+
+        img {
+            transform: scale(1.3);
+            transform-origin: left;
+        }
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__title {
+        color: $first-color;
+        font-size: $h1-font-size;
+        margin-bottom: 1rem;
+    }
+
+    &__desc {
+        color: $text-color;
+        font-weight: map-get($map: $font-weights, $key: "medium");
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        @include button() {
+            font-weight: map-get($map: $font-weights, $key: "semi-bold");
+            padding: .65rem 1.8rem;
+            border-radius: 2.5rem;
+        }
+    }
+}

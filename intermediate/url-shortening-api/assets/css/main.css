@@ -62,8 +62,8 @@ img {
 .header .nav__btn {
   background-color: #2acfcf;
   color: white;
-  padding-block: 1rem;
   font-weight: 700;
+  padding-block: 1rem;
   border-radius: 5rem;
 }
 @media screen and (max-width: 768px) {
@@ -131,6 +131,45 @@ img {
   .header .nav__btn {
     padding: 0.5rem 1.5rem;
   }
+}
+
+main {
+  margin-top: 3.5rem;
+}
+
+.home {
+  display: grid;
+  margin-bottom: 3.5rem;
+}
+.home__img {
+  overflow: hidden;
+  margin-left: 1.5rem;
+  padding-block: 3.5rem;
+}
+.home__img img {
+  transform: scale(1.3);
+  transform-origin: left;
+}
+.home__info {
+  text-align: center;
+}
+.home__title {
+  color: #3b3054;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.home__desc {
+  color: #9e9aa7;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.home__btn {
+  background-color: #2acfcf;
+  color: white;
+  font-weight: 700;
+  font-weight: 600;
+  padding: 0.65rem 1.8rem;
+  border-radius: 2.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
