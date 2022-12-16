@@ -35,49 +35,51 @@ $header-height: 3.5rem;
             }
         }
 
-        &__toggle {
-            color: $text-color;
-            font-size: 1.8rem;
-            font-weight: map-get($font-weights, "medium");
+        @include breakpoints-down("tablet") {
+            &__toggle {
+                color: $text-color;
+                font-size: 1.8rem;
+                font-weight: map-get($font-weights, "medium");
 
-            &:hover {
-                color: $first-color;
+                &:hover {
+                    color: $first-color;
+                }
             }
-        }
 
-        &__menu {
-            position: fixed;
-            top: -100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: $first-color;
-            width: calc(100% - 3rem);
-            padding: 2rem 1.5rem;
-            border-radius: .5rem;
-            transition: .3s;
+            &__menu {
+                position: fixed;
+                top: -100%;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $first-color;
+                width: calc(100% - 3rem);
+                padding: 2rem 1.5rem;
+                border-radius: .5rem;
+                transition: .3s;
 
-            &.show-menu {
-                top: $header-height;
+                &.show-menu {
+                    top: $header-height;
+                }
             }
-        }
 
-        &__item {
-            text-align: center;
-            padding-block: 1rem;
-        }
+            &__item {
+                text-align: center;
+                padding-block: 1rem;
+            }
 
-        &__link {
-            color: $white-color;
-        }
+            &__link {
+                color: $white-color;
+            }
 
-        &__hr {
-            border-top: 1px solid $text-color;
-            margin-block: 1rem;
-        }
+            &__hr {
+                border-top: 1px solid $text-color;
+                margin-block: 1rem;
+            }
 
-        &__btn {
-            display: inline-block;
-            width: 100%;
+            &__btn {
+                display: inline-block;
+                width: 100%;
+            }
         }
 
         @include breakpoints-up("tablet") {
