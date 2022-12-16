@@ -1,4 +1,10 @@
-.container{
+.container {
     max-width: 1148;
     margin-inline: 1.5rem;
+}
+
+@include breakpoints-up("tablet") {
+    .container {
+        margin-inline: 2.5rem;
+    }
 }
