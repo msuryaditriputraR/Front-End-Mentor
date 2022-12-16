@@ -1,7 +1,7 @@
 $header-height: 3.5rem;
 
 /* ==================== HEADER ===================== */
-.header{
+.header {
     position: fixed;
     width: 100%;
     left: 0;
@@ -10,111 +10,109 @@ $header-height: 3.5rem;
     background-color: $white-color;
 
     /* ==================== NAv ===================== */
-    .nav{
+    .nav {
         @include flex(space-between, center);
         height: $header-height;
 
-        &__logo{
+        &__logo {
             color: $first-color;
             font-size: $h1-font-size;
-            font-weight: map-get($font-weights, "bold" );
+            font-weight: map-get($font-weights, "bold");
 
-            &:hover{
+            &:hover {
                 color: $first-color-alt;
             }
         }
 
-        &__link{
+        &__link {
             font-weight: map-get($map: $font-weights, $key: "bold");
         }
 
-        &__btn{
-            @include button(){
-            padding-block: 1rem;
-            border-radius: 5rem;
-            }
-        }
-
-        @include breakpoints-down("tablet"){
-            &__toggle{
-                color: $text-color;
-                font-size: 1.8rem;
-                font-weight: map-get($font-weights, "medium" );
-
-                &:hover{
-                    color: $first-color;
-                }
-            }
-
-            &__menu{
-                position: fixed;
-                top: -100%;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: $first-color;
-                width: calc(100% - 3rem);
-                padding: 2rem 1.5rem;
-                border-radius: .5rem;
-                transition: .3s;
-
-                &.show-menu{
-                    top: $header-height;
-                }
-            }
-    
-            &__item{
-                text-align: center;
+        &__btn {
+            @include button() {
                 padding-block: 1rem;
-            }
-    
-            &__link{
-                color: $white-color;
-            }
-    
-            &__hr{
-                border-top: 1px solid $text-color;
-                margin-block: 1rem;
-            }
-
-            &__btn{
-                display: inline-block;
-                width: 100%;
+                border-radius: 5rem;
             }
         }
 
-        @include breakpoints-up("tablet"){
-            &__toggle{
+        &__toggle {
+            color: $text-color;
+            font-size: 1.8rem;
+            font-weight: map-get($font-weights, "medium");
+
+            &:hover {
+                color: $first-color;
+            }
+        }
+
+        &__menu {
+            position: fixed;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $first-color;
+            width: calc(100% - 3rem);
+            padding: 2rem 1.5rem;
+            border-radius: .5rem;
+            transition: .3s;
+
+            &.show-menu {
+                top: $header-height;
+            }
+        }
+
+        &__item {
+            text-align: center;
+            padding-block: 1rem;
+        }
+
+        &__link {
+            color: $white-color;
+        }
+
+        &__hr {
+            border-top: 1px solid $text-color;
+            margin-block: 1rem;
+        }
+
+        &__btn {
+            display: inline-block;
+            width: 100%;
+        }
+
+        @include breakpoints-up("tablet") {
+            &__toggle {
                 display: none;
             }
 
-            &__menu{
+            &__menu {
                 width: 100%;
                 margin-left: 1.5rem;
             }
 
-            &__list{
-                @include flex(initial, center){
+            &__list {
+                @include flex(initial, center) {
                     column-gap: 1.5rem;
                 }
             }
 
-            &__link{
+            &__link {
                 color: $gray-color;
 
-                &:hover{
+                &:hover {
                     color: $first-color;
                 }
             }
 
-            &__hr{
-               border: none;
-               margin-left: auto;
+            &__hr {
+                border: none;
+                margin-left: auto;
             }
 
-            &__btn{
+            &__btn {
                 padding: .5rem 1.5rem;
             }
         }
     }
-    
+
 }
