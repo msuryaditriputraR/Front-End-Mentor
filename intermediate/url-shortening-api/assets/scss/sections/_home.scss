@@ -19,7 +19,7 @@
 
     &__title {
         color: $first-color;
-        font-size: $h1-font-size;
+        font-size: var(--h1-font-size);
         margin-bottom: 1rem;
     }
 
