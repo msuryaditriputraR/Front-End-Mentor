@@ -11,10 +11,10 @@
 @media screen and (min-width: 1024px) {
   :root {
     --h1-font-size: 3rem;
-    --h2-font-size: 2.2rem;
-    --h3-font-size: 1.65rem;
+    --h2-font-size: 2.15rem;
+    --h3-font-size: 1.5rem;
     --normal-font-size: 1.15rem;
-    --small-font-size: 1rem;
+    --small-font-size: .965rem;
   }
 }
 *,
@@ -476,8 +476,39 @@ main {
     top: 50%;
     width: 2.5rem;
     height: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .features__cards {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    text-align: initial;
+  }
+  .features__card {
+    height: fit-content;
+    padding-top: 4rem;
+  }
+  .features__card:first-child::after {
+    right: -2.5rem;
+    transform: translateY(-50%);
+    top: 50%;
+    left: auto;
     width: 2.5rem;
     height: 10px;
+  }
+  .features__card:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .features__card:nth-child(2):after {
+    left: auto;
+    top: 30%;
+    right: -2.5rem;
+  }
+  .features__card:nth-child(3) {
+    margin-top: 5rem;
+  }
+  .features__card-icon {
+    left: 25%;
   }
 }
 

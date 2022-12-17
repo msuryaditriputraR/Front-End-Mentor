@@ -73,10 +73,49 @@
             left: -2.5rem;
             transform: translateY(-50%);
             top: 50%;
-            width: 2.5rem;
-            height: 10px;
 
             @include box(2.5rem, 10px);
         }
+    }
+
+    @include breakpoints-up("large") {
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1.5rem;
+            text-align: initial;
+        }
+
+        &__card {
+            height: fit-content;
+            padding-top: 4rem;
+
+            &:first-child::after {
+                right: -2.5rem;
+                transform: translateY(-50%);
+                top: 50%;
+                left: auto;
+
+                @include box(2.5rem, 10px);
+            }
+
+            &:nth-child(2) {
+                margin-top: 2rem;
+
+                &:after {
+                    left: auto;
+                    top: 30%;
+                    right: -2.5rem;
+                }
+            }
+
+            &:nth-child(3) {
+                margin-top: 5rem;
+            }
+
+            &-icon {
+                left: 25%;
+            }
+        }
+
     }
 }
