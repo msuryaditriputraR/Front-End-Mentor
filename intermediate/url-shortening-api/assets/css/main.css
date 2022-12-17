@@ -5,18 +5,14 @@
   --h2-font-size: 1.55rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
 }
 
-@media screen and (min-width: 1124px) {
+@media screen and (min-width: 1024px) {
   :root {
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.85rem;
-    --h3-font-size: 1.45rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.65rem;
+    --normal-font-size: 1.15rem;
   }
 }
 *,
@@ -35,6 +31,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #9e9aa7;
+  font-size: var(--normal-font-size);
 }
 
 h1,
@@ -102,7 +99,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.5rem;
+  height: 4.5rem;
 }
 .header .nav__logo {
   color: #3b3054;
@@ -144,7 +141,7 @@ img {
     transition: 0.3s;
   }
   .header .nav__menu.show-menu {
-    top: 3.5rem;
+    top: 4.5rem;
   }
   .header .nav__item {
     text-align: center;
@@ -191,7 +188,7 @@ img {
 }
 
 main {
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
 }
 
 .footer {
