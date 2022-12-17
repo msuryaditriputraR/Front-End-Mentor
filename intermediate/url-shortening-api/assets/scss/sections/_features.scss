@@ -56,4 +56,24 @@
             transform: translateX(-50%);
         }
     }
+
+    @include breakpoints-up("tablet") {
+        &__desc {
+            max-width: 45ch;
+            margin-inline: auto;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2.5rem;
+        }
+
+        &__card:nth-child(even)::after {
+            left: -2.5rem;
+            transform: translateY(-50%);
+            top: 50%;
+            width: 2.5rem;
+            height: 10px;
+        }
+    }
 }

@@ -403,6 +403,23 @@ main {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (min-width: 768px) {
+  .features__desc {
+    max-width: 45ch;
+    margin-inline: auto;
+  }
+  .features__cards {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+  }
+  .features__card:nth-child(even)::after {
+    left: -2.5rem;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 2.5rem;
+    height: 10px;
+  }
+}
 
 .boost {
   text-align: center;
