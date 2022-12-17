@@ -1,0 +1,56 @@
+.footer {
+    background-color: hsl(260, 8%, 14%);
+    text-align: center;
+
+    .container {
+        display: grid;
+        row-gap: 2.5rem;
+        padding-block: 2.5rem;
+    }
+
+    &__logo {
+        color: $white-color;
+        font-size: var(--h1-font-size);
+        font-weight: map-get($font-weights, "bold");
+
+        &:hover {
+            color: $second-color;
+        }
+    }
+
+    &__subtitle {
+        color: $white-color;
+        font-size: var(--normal-font-size);
+        margin-bottom: 1.5rem;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        color: $gray-color;
+        font-size: var(--normal-font-size);
+        font-weight: map-get($font-weights, "medium");
+
+        &:hover {
+            color: $second-color;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.25rem;
+
+        &-icon {
+            color: $white-color;
+            font-size: 1.6rem;
+
+            &:hover {
+                color: $second-color;
+            }
+        }
+    }
+}
