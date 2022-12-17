@@ -127,6 +127,10 @@
     }
 
     @include breakpoints-up("tablet") {
+        & {
+            background-image: url("../images/bg-shorten-desktop.svg");
+        }
+
         &__form {
             flex-direction: row;
             column-gap: 1rem;
