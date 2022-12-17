@@ -26,16 +26,12 @@
     }
 
     &__title {
-        color: $first-color;
-        font-size: var(--h1-font-size);
         margin-bottom: 1rem;
     }
 
     &__desc {
         max-width: 30ch;
         margin-inline: auto;
-        color: $text-color;
-        font-weight: map-get($map: $font-weights, $key: "medium");
         margin-bottom: 2.5rem;
     }
 
