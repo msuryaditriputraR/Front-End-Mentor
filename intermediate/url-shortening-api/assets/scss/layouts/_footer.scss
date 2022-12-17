@@ -67,6 +67,7 @@
         .container {
             grid-template-columns: repeat(2, max-content);
             justify-content: space-between;
+            align-items: flex-start;
         }
 
         &__content {
@@ -78,6 +79,13 @@
     @include breakpoints-up("large") {
         &__content {
             grid-template-columns: repeat(3, max-content);
+        }
+    }
+
+    @include breakpoints-up("xl") {
+        &__content {
+            grid-template-columns: repeat(4, max-content);
+            align-items: flex-start;
         }
     }
 }

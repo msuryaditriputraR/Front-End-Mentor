@@ -251,6 +251,7 @@ main {
   .footer .container {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
+    align-items: flex-start;
   }
   .footer__content {
     grid-template-columns: repeat(2, max-content);
@@ -260,6 +261,12 @@ main {
 @media screen and (min-width: 1024px) {
   .footer__content {
     grid-template-columns: repeat(3, max-content);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .footer__content {
+    grid-template-columns: repeat(4, max-content);
+    align-items: flex-start;
   }
 }
 
