@@ -1,0 +1,25 @@
+.boost {
+    text-align: center;
+    padding-block: 3.5rem;
+
+    background: {
+        image: url('../images/bg-boost-mobile.svg');
+        size: cover;
+        color: $first-color;
+        position: center;
+    }
+
+    &__title {
+        color: $white-color;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__btn {
+        @include button() {
+            font-weight: map-get($map: $font-weights, $key: "semi-bold");
+            padding: .65rem 1.8rem;
+            border-radius: 2.5rem;
+        }
+    }
+}
