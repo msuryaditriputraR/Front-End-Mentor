@@ -47,13 +47,13 @@
 
         &:not(:last-child)::after {
             content: "";
-            width: 10px;
-            height: 5.5rem;
             background-color: $second-color;
             position: absolute;
             bottom: -5.5rem;
             left: 50%;
             transform: translateX(-50%);
+
+            @include box(10px, 5.5rem);
         }
     }
 
@@ -74,6 +74,8 @@
             top: 50%;
             width: 2.5rem;
             height: 10px;
+
+            @include box(2.5rem, 10px);
         }
     }
 }
