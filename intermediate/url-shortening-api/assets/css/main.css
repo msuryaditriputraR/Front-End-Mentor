@@ -339,4 +339,27 @@ main {
   transform: translateX(-50%);
 }
 
+.boost {
+  text-align: center;
+  padding-block: 3.5rem;
+  background-image: url("../images/bg-boost-mobile.svg");
+  background-size: cover;
+  background-color: #3b3054;
+  background-position: center;
+}
+.boost__title {
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.boost__btn {
+  background-color: #2acfcf;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.65rem 1.8rem;
+  border-radius: 2.5rem;
+}
+
 /*# sourceMappingURL=main.css.map */
