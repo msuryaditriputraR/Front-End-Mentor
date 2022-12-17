@@ -482,5 +482,10 @@ main {
   padding: 0.65rem 1.8rem;
   border-radius: 2.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .boost {
+    background-image: url("../images/bg-boost-desktop.svg");
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

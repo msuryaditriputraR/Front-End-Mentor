@@ -22,4 +22,10 @@
             border-radius: 2.5rem;
         }
     }
+
+    @include breakpoints-up("large") {
+        & {
+            background-image: url("../images/bg-boost-desktop.svg");
+        }
+    }
 }
