@@ -137,6 +137,14 @@
         &:focus {
             outline: 3px solid $second-color;
         }
+
+        &.error {
+            outline: 3px solid $red-color;
+
+            &+.error-message {
+                display: inline;
+            }
+        }
     }
 
     &__btn {
