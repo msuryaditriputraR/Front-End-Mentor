@@ -2,17 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 :root {
   --h1-font-size: 2rem;
-  --h2-font-size: 1.55rem;
+  --h2-font-size: 1.65rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: .938rem;
+  --small-font-size: .875rem;
 }
 
 @media screen and (min-width: 1024px) {
   :root {
     --h1-font-size: 3rem;
-    --h2-font-size: 2rem;
+    --h2-font-size: 2.2rem;
     --h3-font-size: 1.65rem;
     --normal-font-size: 1.15rem;
+    --small-font-size: 1rem;
   }
 }
 *,
@@ -425,7 +427,8 @@ main {
   margin-bottom: 1rem;
 }
 .features__card-desc {
-  font-size: var(--normal-font-size);
+  line-height: 1.8;
+  font-size: var(--small-font-size);
 }
 .features__card-icon {
   display: flex;
