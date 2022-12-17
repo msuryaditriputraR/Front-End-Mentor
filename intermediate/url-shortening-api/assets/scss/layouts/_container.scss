@@ -1,10 +1,22 @@
 .container {
     max-width: 1148px;
     margin-inline: 1.5rem;
-}
 
-@include breakpoints-up("tablet") {
-    .container {
-        margin-inline: 2.5rem;
+    @include breakpoints-up("tablet") {
+        & {
+            margin-inline: 2.5rem;
+        }
+    }
+
+    @include breakpoints-up("large") {
+        & {
+            margin-inline: 4.5rem;
+        }
+    }
+
+    @include breakpoints-up("xl") {
+        & {
+            margin-inline: auto;
+        }
     }
 }
