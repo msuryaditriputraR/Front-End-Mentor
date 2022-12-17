@@ -399,6 +399,11 @@ main {
   padding: 0.8rem 1rem;
   font-size: var(--normal-font-size);
 }
+.shorter .error-message {
+  color: #f46262;
+  font-size: 0.938rem;
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .shorter__form {
     flex-direction: row;
@@ -407,6 +412,11 @@ main {
   }
   .shorter__input {
     flex-grow: 2;
+    position: relative;
+  }
+  .shorter .error-message {
+    position: absolute;
+    bottom: 5px;
   }
 }
 @media screen and (min-width: 1024px) {

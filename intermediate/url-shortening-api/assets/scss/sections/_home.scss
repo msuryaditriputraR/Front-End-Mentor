@@ -152,6 +152,12 @@
         font-size: var(--normal-font-size);
     }
 
+    .error-message {
+        color: $red-color;
+        font-size: .938rem;
+        display: none;
+    }
+
     @include breakpoints-up("tablet") {
         &__form {
             flex-direction: row;
@@ -161,6 +167,12 @@
 
         &__input {
             flex-grow: 2;
+            position: relative;
+        }
+
+        .error-message {
+            position: absolute;
+            bottom: 5px;
         }
     }
 
