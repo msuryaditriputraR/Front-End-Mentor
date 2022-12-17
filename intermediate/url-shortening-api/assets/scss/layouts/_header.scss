@@ -42,7 +42,7 @@ $header-height: 4.5rem;
                 font-weight: map-get($font-weights, "medium");
 
                 &:hover {
-                    color: $first-color;
+                    color: $second-color;
                 }
             }
 
@@ -89,7 +89,7 @@ $header-height: 4.5rem;
 
             &__menu {
                 width: 100%;
-                margin-left: 1.5rem;
+                margin-left: 2.5rem;
             }
 
             &__list {
@@ -99,10 +99,11 @@ $header-height: 4.5rem;
             }
 
             &__link {
-                color: $gray-color;
+                color: $text-color;
+                font-weight: map-get($map: $font-weights, $key: "medium");
 
                 &:hover {
-                    color: $first-color;
+                    color: $second-color;
                 }
             }
 

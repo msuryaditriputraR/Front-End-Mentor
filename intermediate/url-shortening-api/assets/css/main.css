@@ -129,7 +129,7 @@ img {
     font-weight: 500;
   }
   .header .nav__toggle:hover {
-    color: #3b3054;
+    color: #2acfcf;
   }
   .header .nav__menu {
     position: fixed;
@@ -167,7 +167,7 @@ img {
   }
   .header .nav__menu {
     width: 100%;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
   }
   .header .nav__list {
     display: flex;
@@ -175,10 +175,11 @@ img {
     column-gap: 1.5rem;
   }
   .header .nav__link {
-    color: #bfbfbf;
+    color: #9e9aa7;
+    font-weight: 500;
   }
   .header .nav__link:hover {
-    color: #3b3054;
+    color: #2acfcf;
   }
   .header .nav__hr {
     border: none;
