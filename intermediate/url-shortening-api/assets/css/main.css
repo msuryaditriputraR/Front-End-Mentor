@@ -364,16 +364,16 @@ main {
 }
 .features__card-icon {
   display: flex;
-  width: 80px;
-  height: 80px;
   background-color: #3b3054;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 .features__card:not(:last-child)::after {
   content: "";

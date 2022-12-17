@@ -34,16 +34,15 @@
 
         &-icon {
             display: flex;
-            width: 80px;
-            height: 80px;
             background-color: $first-color;
             justify-content: center;
             align-items: center;
-            border-radius: 50%;
             position: absolute;
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            @include box(80px, 80px, 50%);
         }
 
         &:not(:last-child)::after {
