@@ -381,6 +381,10 @@ main {
   font-family: "Poppins", sans-serif;
   color: #9e9aa7;
   font-weight: 500;
+  transition: 0.3s;
+}
+.shorter__input:focus {
+  outline: 3px solid #2acfcf;
 }
 .shorter__btn {
   background-color: #2acfcf;
