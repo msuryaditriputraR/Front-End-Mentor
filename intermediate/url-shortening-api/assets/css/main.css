@@ -257,6 +257,11 @@ main {
     column-gap: 5rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer__content {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
 
 .home {
   position: relative;

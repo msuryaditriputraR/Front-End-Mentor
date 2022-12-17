@@ -74,4 +74,10 @@
             column-gap: 5rem;
         }
     }
+
+    @include breakpoints-up("large") {
+        &__content {
+            grid-template-columns: repeat(3, max-content);
+        }
+    }
 }
