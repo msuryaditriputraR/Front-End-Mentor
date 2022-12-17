@@ -16,7 +16,7 @@ $header-height: 4.5rem;
 
         &__logo {
             color: $first-color;
-            font-size: var(--h1-font-size);
+            font-size: 2rem;
             font-weight: map-get($font-weights, "bold");
 
             &:hover {

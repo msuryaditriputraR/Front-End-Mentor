@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --h1-font-size: 3rem;
+    --h1-font-size: 4rem;
     --h2-font-size: 2.15rem;
     --h3-font-size: 1.5rem;
     --normal-font-size: 1.15rem;
@@ -105,7 +105,7 @@ img {
 }
 .header .nav__logo {
   color: #3b3054;
-  font-size: var(--h1-font-size);
+  font-size: 2rem;
   font-weight: 700;
 }
 .header .nav__logo:hover {
@@ -209,7 +209,7 @@ main {
 }
 .footer__logo {
   color: white;
-  font-size: var(--h1-font-size);
+  font-size: 2rem;
   font-weight: 700;
 }
 .footer__logo:hover {
@@ -350,6 +350,9 @@ main {
   .home__img img {
     transform: scale(1.4);
     transform-origin: initial;
+  }
+  .home__title {
+    line-height: 1.25;
   }
 }
 
