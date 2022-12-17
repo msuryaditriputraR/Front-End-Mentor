@@ -193,6 +193,10 @@ main {
   row-gap: 2.5rem;
   padding-block: 2.5rem;
 }
+.footer__content {
+  display: grid;
+  row-gap: 2.5rem;
+}
 .footer__logo {
   color: white;
   font-size: var(--h1-font-size);
@@ -229,6 +233,19 @@ main {
 }
 .footer__socials-icon:hover {
   color: #2acfcf;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: initial;
+  }
+  .footer .container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+  .footer__content {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 5rem;
+  }
 }
 
 .home {

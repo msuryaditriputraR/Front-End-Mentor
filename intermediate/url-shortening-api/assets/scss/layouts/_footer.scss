@@ -8,6 +8,11 @@
         padding-block: 2.5rem;
     }
 
+    &__content {
+        display: grid;
+        row-gap: 2.5rem;
+    }
+
     &__logo {
         color: $white-color;
         font-size: var(--h1-font-size);
@@ -51,6 +56,22 @@
             &:hover {
                 color: $second-color;
             }
+        }
+    }
+
+    @include breakpoints-up("tablet") {
+        & {
+            text-align: initial;
+        }
+
+        .container {
+            grid-template-columns: repeat(2, max-content);
+            justify-content: space-between;
+        }
+
+        &__content {
+            grid-template-columns: repeat(2, max-content);
+            column-gap: 5rem;
         }
     }
 }
