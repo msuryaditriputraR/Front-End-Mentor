@@ -140,10 +140,6 @@
 
         &.error {
             outline: 3px solid $red-color;
-
-            &+.error-message {
-                display: inline;
-            }
         }
     }
 

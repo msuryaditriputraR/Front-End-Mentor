@@ -389,9 +389,6 @@ main {
 .shorter__input.error {
   outline: 3px solid #f46262;
 }
-.shorter__input.error + .error-message {
-  display: inline;
-}
 .shorter__btn {
   background-color: #2acfcf;
   color: white;
