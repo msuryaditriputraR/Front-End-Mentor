@@ -48,7 +48,7 @@
 
     @include breakpoints-up("tablet") {
         & {
-            padding-block: 2.5rem 5.5rem;
+            padding-bottom: 4rem;
         }
 
         &__wrapper {
@@ -56,6 +56,7 @@
             justify-content: space-between;
             align-items: center;
             overflow-x: hidden;
+            padding-block: 2.5rem 5.5rem;
         }
 
         .container {
@@ -79,12 +80,28 @@
             text-align: initial;
         }
     }
+
+    @include breakpoints-up("xl") {
+        &__wrapper {
+            padding-left: 6.5rem;
+        }
+
+        &__img {
+            overflow: visible;
+        }
+
+        &__img img {
+            transform: scale(1.4);
+            transform-origin: initial;
+        }
+
+    }
 }
 
 /* ==================== SHORTER ===================== */
 .shorter {
     position: absolute;
-    max-width: 1148px;
+    max-width: 1048px;
     width: 90vw;
     bottom: 0;
     left: 50%;

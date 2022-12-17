@@ -69,7 +69,7 @@ img {
 }
 
 .container {
-  max-width: 1148px;
+  max-width: 1048px;
   margin-inline: 1.5rem;
 }
 @media screen and (min-width: 768px) {
@@ -307,13 +307,14 @@ main {
 }
 @media screen and (min-width: 768px) {
   .home {
-    padding-block: 2.5rem 5.5rem;
+    padding-bottom: 4rem;
   }
   .home__wrapper {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
+    padding-block: 2.5rem 5.5rem;
   }
   .home .container {
     margin-right: 0;
@@ -332,11 +333,23 @@ main {
     text-align: initial;
   }
 }
+@media screen and (min-width: 1240px) {
+  .home__wrapper {
+    padding-left: 6.5rem;
+  }
+  .home__img {
+    overflow: visible;
+  }
+  .home__img img {
+    transform: scale(1.4);
+    transform-origin: initial;
+  }
+}
 
 /* ==================== SHORTER ===================== */
 .shorter {
   position: absolute;
-  max-width: 1148px;
+  max-width: 1048px;
   width: 90vw;
   bottom: 0;
   left: 50%;
