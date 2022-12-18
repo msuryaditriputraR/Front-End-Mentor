@@ -67,6 +67,16 @@ img {
   max-width: 100%;
 }
 
+@media screen and (min-width: 1506px) {
+  body {
+    zoom: 1.2;
+  }
+}
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
 .container {
   max-width: 1048px;
   margin-inline: 1.5rem;
