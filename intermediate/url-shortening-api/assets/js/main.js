@@ -25,6 +25,22 @@ const shorterCards = document.getElementById("shorter-cards");
 
 const links = [];
 
+// GET RESULTS FROM LOCAL STORAGE FIRST
+const results = JSON.parse(localStorage.getItem("results"));
+
+// CHECK IF RESULTS EXIST
+if (results) {
+    // ADD RESULTS TO LINkS ARRAY
+    links.push(...results);
+
+    // LOOPING ARRAY TO MAKE ELEMENT
+    results.forEach((link) => {
+        const card = cardResult(link.originalLink, link.shortLink);
+
+        shorterCards.appendChild(card);
+    });
+}
+
 /* ==================== HANDLE SUBMIT ===================== */
 const shorterForm = document.getElementById("shorter-form");
 
@@ -57,6 +73,9 @@ if (shorterForm) {
                         originalLink: result.original_link,
                         shortLink: result.short_link,
                     });
+
+                    // SAVE LINKS TO LOCAL STORAGE, SO THE RESULTS ARE STILL STORED EVEN IF THE PAGE IS RELOADED
+                    localStorage.setItem("results", JSON.stringify(links));
 
                     // LOOPING ARRAY TO MAKE ELEMENT
                     links.forEach((link) => {
