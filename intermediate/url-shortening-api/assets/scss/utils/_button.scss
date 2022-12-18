@@ -5,4 +5,9 @@
     cursor: pointer;
 
     @content;
+
+    &:hover,
+    &:active {
+        filter: grayscale(50%) brightness(1.25);
+    }
 }

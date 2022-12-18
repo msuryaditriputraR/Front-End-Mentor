@@ -122,6 +122,9 @@ img {
   padding-block: 1rem;
   border-radius: 5rem;
 }
+.header .nav__btn:hover, .header .nav__btn:active {
+  filter: grayscale(50%) brightness(1.25);
+}
 @media screen and (max-width: 768px) {
   .header .nav__toggle {
     color: #9e9aa7;
@@ -312,6 +315,9 @@ main {
   padding: 0.65rem 1.8rem;
   border-radius: 2.5rem;
 }
+.home__btn:hover, .home__btn:active {
+  filter: grayscale(50%) brightness(1.25);
+}
 @media screen and (min-width: 768px) {
   .home {
     padding-bottom: 4rem;
@@ -394,6 +400,9 @@ main {
   color: white;
   font-weight: 700;
   cursor: pointer;
+}
+.shorter__btn:hover, .shorter__btn:active {
+  filter: grayscale(50%) brightness(1.25);
 }
 .shorter__input, .shorter__btn {
   border: none;
@@ -553,6 +562,9 @@ main {
   font-weight: 600;
   padding: 0.65rem 1.8rem;
   border-radius: 2.5rem;
+}
+.boost__btn:hover, .boost__btn:active {
+  filter: grayscale(50%) brightness(1.25);
 }
 @media screen and (min-width: 1024px) {
   .boost {
