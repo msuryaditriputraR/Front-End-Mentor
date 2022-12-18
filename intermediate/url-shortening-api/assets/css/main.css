@@ -119,6 +119,8 @@ img {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  outline: none;
   padding-block: 1rem;
   border-radius: 5rem;
 }
@@ -311,6 +313,8 @@ main {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  outline: none;
   font-weight: 600;
   padding: 0.65rem 1.8rem;
   border-radius: 2.5rem;
@@ -400,6 +404,8 @@ main {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 .shorter__btn:hover, .shorter__btn:active {
   filter: grayscale(50%) brightness(1.25);
@@ -559,6 +565,8 @@ main {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  outline: none;
   font-weight: 600;
   padding: 0.65rem 1.8rem;
   border-radius: 2.5rem;
@@ -569,6 +577,71 @@ main {
 @media screen and (min-width: 1024px) {
   .boost {
     background-image: url("../images/bg-boost-desktop.svg");
+  }
+}
+
+.shorter__card {
+  background-color: white;
+  padding: 1.5rem;
+  text-align: initial;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 5px rgba(59, 48, 84, 0.1);
+}
+.shorter__card:last-child {
+  margin-bottom: 3rem;
+}
+.shorter__card-original {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #3b3054;
+}
+.shorter__card-hr {
+  margin-block: 0.5rem;
+}
+.shorter__card-short {
+  color: #2acfcf;
+  margin-bottom: 1rem;
+}
+.shorter__card-btn {
+  background-color: #2acfcf;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-size: var(--normal-font-size);
+}
+.shorter__card-btn:hover, .shorter__card-btn:active {
+  filter: grayscale(50%) brightness(1.25);
+}
+@media screen and (min-width: 568px) {
+  .shorter__card-btn {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shorter__card {
+    display: flex;
+    align-items: center;
+  }
+  .shorter__card-original {
+    flex-basis: 35%;
+  }
+  .shorter__card-short {
+    margin-bottom: 0;
+  }
+  .shorter__card-hr {
+    border: none;
+    margin-left: auto;
+  }
+  .shorter__card-btn {
+    flex-basis: 10%;
+    margin-left: 1.5rem;
   }
 }
 

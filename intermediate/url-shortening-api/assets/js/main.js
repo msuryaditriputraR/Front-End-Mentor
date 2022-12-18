@@ -1,4 +1,5 @@
 import getShortLink from "./api/getShortLink.js";
+import cardResult from "./component/cardResult.js";
 import errorHTML from "./helper/errorHTML.js";
 
 /*==================== MENU SHOW / HIDDEN ====================*/
@@ -17,6 +18,13 @@ const toggleMenu = (toggleId, menuId) => {
 
 toggleMenu("nav-toggle", "nav-menu");
 
+/* ==================== SHORTER CARD ===================== */
+
+// SELECT CONTAINER CARD
+const shorterCards = document.getElementById("shorter-cards");
+
+const links = [];
+
 /* ==================== HANDLE SUBMIT ===================== */
 const shorterForm = document.getElementById("shorter-form");
 
@@ -34,8 +42,35 @@ if (shorterForm) {
             // GET SHORT URL
             getShortLink(input.value)
                 .then((response) => response.json())
-                .then((result) => result.result.short_link)
-                .then((sl) => console.log(sl));
+                .then((result) => result.result)
+                .then((result) => {
+                    // RESET CHILD CONTAINER
+                    shorterCards.innerHTML = ``;
+
+                    // CHECK IF CARD - 3, IF TRUE REMOVE LAST ITEM
+                    if (links.length === 3) {
+                        links.pop();
+                    }
+
+                    // ADD ITEM AT THE START OF ARRAY
+                    links.unshift({
+                        originalLink: result.original_link,
+                        shortLink: result.short_link,
+                    });
+
+                    // LOOPING ARRAY TO MAKE ELEMENT
+                    links.forEach((link) => {
+                        const card = cardResult(
+                            link.originalLink,
+                            link.shortLink
+                        );
+
+                        shorterCards.appendChild(card);
+                    });
+
+                    // RESET INPUT VALUE
+                    input.value = "";
+                });
         }
 
         input.addEventListener("input", function () {
