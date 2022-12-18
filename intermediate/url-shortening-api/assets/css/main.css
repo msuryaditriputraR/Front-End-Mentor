@@ -615,9 +615,13 @@ main {
   padding: 1rem;
   border-radius: 0.25rem;
   font-size: var(--normal-font-size);
+  transition: 0.3s;
 }
 .shorter__card-btn:hover, .shorter__card-btn:active {
   filter: grayscale(50%) brightness(1.25);
+}
+.shorter__card-btn.copy {
+  background-color: #3b3054;
 }
 @media screen and (min-width: 568px) {
   .shorter__card-btn {

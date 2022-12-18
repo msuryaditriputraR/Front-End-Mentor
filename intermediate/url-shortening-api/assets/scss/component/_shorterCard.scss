@@ -32,6 +32,11 @@
             padding: 1rem;
             border-radius: .25rem;
             font-size: var(--normal-font-size);
+            transition: .3s;
+        }
+
+        &.copy {
+            background-color: $first-color;
         }
 
         @include breakpoints-up("medium") {

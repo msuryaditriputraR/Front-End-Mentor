@@ -1,3 +1,5 @@
+import copyLink from "../helper/copyLink.js";
+
 export default function cardResult(originalLink, shortLink) {
     const cardClassname = "shorter__card";
 
@@ -24,6 +26,9 @@ export default function cardResult(originalLink, shortLink) {
 
     btnCopy.className = cardClassname + "-btn";
     btnCopy.innerText = "Copy";
+    btnCopy.addEventListener("click", function () {
+        copyLink(this, shortLink);
+    });
 
     const card = document.createElement("div");
 
