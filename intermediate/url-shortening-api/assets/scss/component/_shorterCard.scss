@@ -1,0 +1,66 @@
+.shorter__card {
+    background-color: $white-color;
+    padding: 1.5rem;
+    text-align: initial;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 5px rgba($color: $first-color, $alpha: 0.1);
+
+    &:last-child {
+        margin-bottom: 3rem;
+    }
+
+    &-original {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $first-color;
+    }
+
+    &-hr {
+        margin-block: .5rem;
+    }
+
+    &-short {
+        color: $second-color;
+        margin-bottom: 1rem;
+    }
+
+    &-btn {
+        @include button() {
+            width: 100%;
+            padding: 1rem;
+            border-radius: .25rem;
+            font-size: var(--normal-font-size);
+        }
+
+        @include breakpoints-up("medium") {
+            width: 30%;
+        }
+    }
+
+    @include breakpoints-up("tablet") {
+        & {
+            display: flex;
+            align-items: center;
+        }
+
+        &-original {
+            flex-basis: 35%;
+        }
+
+        &-short {
+            margin-bottom: 0;
+        }
+
+        &-hr {
+            border: none;
+            margin-left: auto;
+        }
+
+        &-btn {
+            flex-basis: 10%;
+            margin-left: 1.5rem;
+        }
+    }
+}
