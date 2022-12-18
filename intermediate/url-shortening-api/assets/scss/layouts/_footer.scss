@@ -59,6 +59,24 @@
         }
     }
 
+    &__copy {
+        text-align: center;
+        padding-block: 1.5rem;
+        font-size: var(--small-font-size);
+
+        &-link {
+            color: $second-color;
+            font-weight: map-get($map: $font-weights, $key: "bold");
+
+            text-decoration : {
+                line: underline;
+                style: dashed;
+            }
+
+            text-underline-offset: .25rem;
+        }
+    }
+
     @include breakpoints-up("tablet") {
         & {
             text-align: initial;

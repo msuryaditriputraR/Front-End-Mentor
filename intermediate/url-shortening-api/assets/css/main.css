@@ -249,6 +249,18 @@ main {
 .footer__socials-icon:hover {
   color: #2acfcf;
 }
+.footer__copy {
+  text-align: center;
+  padding-block: 1.5rem;
+  font-size: var(--small-font-size);
+}
+.footer__copy-link {
+  color: #2acfcf;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 0.25rem;
+}
 @media screen and (min-width: 768px) {
   .footer {
     text-align: initial;
