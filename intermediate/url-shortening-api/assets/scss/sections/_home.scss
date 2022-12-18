@@ -83,7 +83,10 @@
 
     @include breakpoints-up("xl") {
         &__wrapper {
-            padding-left: 6.5rem;
+            width: 90vw;
+            max-width: 1228px;
+            margin-left: auto;
+            padding-block: 5rem;
         }
 
         &__img {
@@ -91,14 +94,21 @@
         }
 
         &__img img {
-            transform: scale(1.4);
+            transform: scale(1.6);
             transform-origin: initial;
         }
 
         &__title {
             line-height: 1.25;
         }
+    }
 
+    @include breakpoints-up("xxl") {
+        &__wrapper {
+            margin-inline: auto;
+            overflow: visible;
+            max-width: 1048px;
+        }
     }
 }
 

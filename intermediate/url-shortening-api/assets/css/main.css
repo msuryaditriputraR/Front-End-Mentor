@@ -365,17 +365,27 @@ main {
 }
 @media screen and (min-width: 1240px) {
   .home__wrapper {
-    padding-left: 6.5rem;
+    width: 90vw;
+    max-width: 1228px;
+    margin-left: auto;
+    padding-block: 5rem;
   }
   .home__img {
     overflow: visible;
   }
   .home__img img {
-    transform: scale(1.4);
+    transform: scale(1.6);
     transform-origin: initial;
   }
   .home__title {
     line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1506px) {
+  .home__wrapper {
+    margin-inline: auto;
+    overflow: visible;
+    max-width: 1048px;
   }
 }
 
