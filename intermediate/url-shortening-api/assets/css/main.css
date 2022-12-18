@@ -158,7 +158,6 @@ img {
     color: white;
   }
   .header .nav__hr {
-    border-top: 1px solid #9e9aa7;
     margin-block: 1rem;
   }
   .header .nav__btn {
@@ -187,8 +186,10 @@ img {
     color: #2acfcf;
   }
   .header .nav__hr {
-    border: none;
     margin-left: auto;
+  }
+  .header .nav__hr hr {
+    border: none;
   }
   .header .nav__btn {
     padding: 0.5rem 1.5rem;

@@ -37,7 +37,9 @@
           <li class="nav__item">
             <a href="" class="nav__link">Resources</a>
           </li>
-          <hr class="nav__hr">
+          <li class="nav__hr">
+            <hr>
+          </li>
           <li class="nav__item">
             <a href="" class="nav__link">Login</a>
           </li>
@@ -71,13 +73,13 @@
       </div>
 
       <!-- SHORTER LINK -->
-      <article class="shorter">
-        <form action="" class="shorter__form" id="shorter-form">
+      <div class="shorter">
+        <form class="shorter__form" id="shorter-form">
           <input type="text" class="shorter__input" id="shorter-input" placeholder="Shorten a link here...">
           <span class="error-message" id="error-message"></span>
           <button type="submit" class="shorter__btn">Shorten It!</button>
         </form>
-      </article>
+      </div>
     </section>
 
     <!--- ==================== FEATURES ===================== -->
@@ -165,23 +167,27 @@
         </div>
 
         <div class="footer__socials">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__socials-icon">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+            class="footer__socials-icon">
             <i class='bx bxl-facebook-square'></i>
           </a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__socials-icon">
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+            class="footer__socials-icon">
             <i class='bx bxl-twitter'></i>
           </a>
-          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer__socials-icon">
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"
+            class="footer__socials-icon">
             <i class='bx bxl-pinterest'></i>
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__socials-icon">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+            class="footer__socials-icon">
             <i class='bx bxl-instagram'></i>
           </a>
         </div>
       </div>
     </div>
     <p class="footer__copy">Made with ❤️ by
-      <a href="https://github.com/msuryaditriputraR" target="_blank" rel="noopener noreferrer"
+      <a href="https://github.com/msuryaditriputraR" target="_blank" rel="noopener noreferrer" aria-label="Github"
         class="footer__copy-link">
         Danbo
       </a>
