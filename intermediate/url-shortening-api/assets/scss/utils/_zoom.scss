@@ -1,0 +1,11 @@
+@include breakpoints-up("xxl") {
+    body {
+        zoom: 1.2;
+    }
+}
+
+@include breakpoints-up("2k") {
+    body {
+        zoom: 1.5;
+    }
+}
