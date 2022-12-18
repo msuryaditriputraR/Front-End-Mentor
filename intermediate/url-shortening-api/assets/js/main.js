@@ -63,7 +63,7 @@ if (shorterForm) {
                     // RESET CHILD CONTAINER
                     shorterCards.innerHTML = ``;
 
-                    // CHECK IF CARD - 3, IF TRUE REMOVE LAST ITEM
+                    // CHECK IF CARD = 3, IF TRUE REMOVE LAST ITEM
                     if (links.length === 3) {
                         links.pop();
                     }
