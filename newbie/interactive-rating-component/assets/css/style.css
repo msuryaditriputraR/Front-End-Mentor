@@ -80,6 +80,7 @@ img {
     border-radius: .5rem;
 }
 
+/* FLIP CARD */
 .card.submit .card__content {
     transform: rotateY(.5turn);
 }
