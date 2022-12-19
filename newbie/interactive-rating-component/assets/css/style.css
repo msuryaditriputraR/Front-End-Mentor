@@ -66,6 +66,8 @@ img {
     box-shadow: 0px 4px 10px hsla(216, 12%, 54%, .15);
 }
 
+/* ==================== CARD RATING ===================== */
+
 .card__icon {
     background-color: var(--dark-blue-alt);
     width: 35px;
@@ -131,3 +133,5 @@ img {
     background-color: var(--white);
     color: var(--orange);
 }
+
+/* ==================== CARD THANK ===================== */
