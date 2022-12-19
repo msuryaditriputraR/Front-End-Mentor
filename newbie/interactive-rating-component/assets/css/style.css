@@ -52,6 +52,10 @@ h2 {
     font-size: var(--h1-font-size);
 }
 
+p {
+    font-size: var(--p-font-size);
+}
+
 img {
     max-width: 100%;
 }
@@ -135,3 +139,21 @@ img {
 }
 
 /* ==================== CARD THANK ===================== */
+.card__thank {
+    text-align: center;
+}
+
+.card__result {
+    color: var(--orange);
+    background-color: var(--dark-blue-alt);
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 2.5rem;
+    margin-block: 1rem 1.5rem;
+}
+
+.card__thank-desc {
+    color: var(--medium-grey);
+    margin-top: .85rem;
+    line-height: 1.65;
+}
