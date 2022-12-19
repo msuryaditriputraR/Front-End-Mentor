@@ -15,60 +15,63 @@
 
 <body>
 
-  <!--- ==================== CARD ===================== -->
-  <article class="card" id="card">
-    <div class="card__content">
+  <!--- ==================== MAIN ===================== -->
+  <main>
+    <!--- ==================== CARD ===================== -->
+    <article class="card" id="card">
+      <div class="card__content">
 
-      <!--- ==================== RATING CARD ===================== -->
-      <div class="card__rating">
-        <div class="card__icon">
-          <img src="assets/images/icon-star.svg" alt="" aria-hidden="true" class="card__icon-star">
-        </div>
-        <h1>
-          How did we do?
-        </h1>
-
-        <p class="card__rating-desc">
-          Please let us know how we did with your support request. All feedback is appreciated
-          to help us improve our offering!
-        </p>
-
-        <form id="card-form">
-          <div class="card__radios">
-            <input type="radio" name="rating" id="rating-1" class="card__radio" value="1">
-            <label for="rating-1" class="card__label">1</label>
-            <input type="radio" name="rating" id="rating-2" class="card__radio" value="2">
-            <label for="rating-2" class="card__label">2</label>
-            <input type="radio" name="rating" id="rating-3" class="card__radio" value="3">
-            <label for="rating-3" class="card__label">3</label>
-            <input type="radio" name="rating" id="rating-4" class="card__radio" value="4">
-            <label for="rating-4" class="card__label">4</label>
-            <input type="radio" name="rating" id="rating-5" class="card__radio" value="5">
-            <label for="rating-5" class="card__label">5</label>
+        <!--- ==================== RATING CARD ===================== -->
+        <div class="card__rating">
+          <div class="card__icon">
+            <img src="assets/images/icon-star.svg" alt="" aria-hidden="true" class="card__icon-star">
           </div>
-          <button type="submit" class="card__btn">Submit</button>
-        </form>
-      </div>
+          <h1>
+            How did we do?
+          </h1>
 
-      <!--- ==================== THANK CARD ===================== -->
-      <div class="card__thank">
-        <div class="card__img">
-          <img src="assets/images/illustration-thank-you.svg" alt="" aria-hidden="true">
+          <p class="card__rating-desc">
+            Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!
+          </p>
+
+          <form id="card-form">
+            <div class="card__radios">
+              <input type="radio" name="rating" id="rating-1" class="card__radio" value="1">
+              <label for="rating-1" class="card__label">1</label>
+              <input type="radio" name="rating" id="rating-2" class="card__radio" value="2">
+              <label for="rating-2" class="card__label">2</label>
+              <input type="radio" name="rating" id="rating-3" class="card__radio" value="3">
+              <label for="rating-3" class="card__label">3</label>
+              <input type="radio" name="rating" id="rating-4" class="card__radio" value="4">
+              <label for="rating-4" class="card__label">4</label>
+              <input type="radio" name="rating" id="rating-5" class="card__radio" value="5">
+              <label for="rating-5" class="card__label">5</label>
+            </div>
+            <button type="submit" class="card__btn">Submit</button>
+          </form>
         </div>
-        <p class="card__result">
-          You selected <span id="result-rating"></span> out of 5
-        </p>
 
-        <h2>
-          Thank you!
-        </h2>
-        <p class="card__thank-desc">
-          We appreciate you taking the time to give a rating. If you ever need more support,
-          don’t hesitate to get in touch!
-        </p>
+        <!--- ==================== THANK CARD ===================== -->
+        <div class="card__thank">
+          <div class="card__img">
+            <img src="assets/images/illustration-thank-you.svg" alt="" aria-hidden="true">
+          </div>
+          <p class="card__result">
+            You selected <span id="result-rating"></span> out of 5
+          </p>
+
+          <h2>
+            Thank you!
+          </h2>
+          <p class="card__thank-desc">
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </main>
 
   <!--- ==================== MAIN JS ===================== -->
   <script src="assets/js/main.js"></script>
