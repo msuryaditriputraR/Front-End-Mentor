@@ -19,6 +19,9 @@
     --h1-font-size: 1.285rem;
     --normal-font-size: 1rem;
     --p-font-size: .938rem;
+
+    /* ==================== TRANSFORM 3D ===================== */
+    --translate-z: translateZ(5rem);
 }
 
 /* ==================== RESPONSIVE FONT SIZE ===================== */
@@ -50,6 +53,7 @@ h1,
 h2 {
     color: var(--white);
     font-size: var(--h1-font-size);
+    transform: var(--level-three);
 }
 
 p {
@@ -64,10 +68,28 @@ img {
 .card {
     width: 85vw;
     max-width: 375px;
-    background-color: var(--dark-blue);
-    padding: 1.5rem;
-    border-radius: .5rem;
     box-shadow: 0px 4px 10px hsla(216, 12%, 54%, .15);
+}
+
+.card__content {
+    position: relative;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+    height: calc(350px + 1.5rem);
+    background-color: var(--dark-blue);
+    border-radius: .5rem;
+}
+
+.card.submit .card__content {
+    transform: rotateY(.5turn);
+}
+
+.card__rating,
+.card__thank {
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 1.5rem;
+    transform: var(--translate-z);
 }
 
 /* ==================== CARD RATING ===================== */
@@ -141,6 +163,7 @@ img {
 /* ==================== CARD THANK ===================== */
 .card__thank {
     text-align: center;
+    transform: rotateY(.5turn) var(--translate-z);
 }
 
 .card__result {
