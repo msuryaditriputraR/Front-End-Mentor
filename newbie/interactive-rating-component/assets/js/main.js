@@ -28,25 +28,12 @@ function handleSubmit(e) {
     // RESET DEFAULT BEHAVIOR
     e.preventDefault();
 
-    // INITIAL VALUE
-    let ratingValue = 1;
-
-    // LOOP RADIOS TO GET VALUE IF IT CHECKED
-    let i = 0;
-    while (radiosRating) {
-        if (radiosRating[i].checked) {
-            ratingValue = radiosRating[i].value;
-            break;
-        }
-
-        i++;
-    }
-
     // ADD CLASS CSS TO CARD
     card.classList.add("submit");
 
     // ADD VALUE TO SPAN
-    spanResult.innerText = ratingValue;
+    spanResult.innerText =
+        document.querySelector("label.active").previousElementSibling.value;
 
     // RETURN TO INITIAL STATE
     setTimeout(() => {
