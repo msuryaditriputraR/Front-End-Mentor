@@ -24,41 +24,41 @@ if (radiosRating) {
 }
 
 // HANDLE SUBMIT FUNCTION
-function handleSubmit() {}
+function handleSubmit(e) {
+    // RESET DEFAULT BEHAVIOR
+    e.preventDefault();
+
+    // INITIAL VALUE
+    let ratingValue = 1;
+
+    // LOOP RADIOS TO GET VALUE IF IT CHECKED
+    let i = 0;
+    while (radiosRating) {
+        if (radiosRating[i].checked) {
+            ratingValue = radiosRating[i].value;
+            break;
+        }
+
+        i++;
+    }
+
+    // ADD CLASS CSS TO CARD
+    card.classList.add("submit");
+
+    // ADD VALUE TO SPAN
+    spanResult.innerText = ratingValue;
+
+    // RETURN TO INITIAL STATE
+    setTimeout(() => {
+        card.classList.remove("submit");
+        const labelActive = document.querySelector("label.active");
+
+        if (labelActive) labelActive.classList.remove("active");
+    }, 5000);
+}
 
 // check if formRating Exist
 if (formRating) {
     // HANDLE WHEN FORM SUBMIT
-    formRating.addEventListener("submit", (e) => {
-        // RESET DEFAULT BEHAVIOR
-        e.preventDefault();
-
-        // INITIAL VALUE
-        let ratingValue = 1;
-
-        // LOOP RADIOS TO GET VALUE IF IT CHECKED
-        let i = 0;
-        while (radiosRating) {
-            if (radiosRating[i].checked) {
-                ratingValue = radiosRating[i].value;
-                break;
-            }
-
-            i++;
-        }
-
-        // ADD CLASS CSS TO CARD
-        card.classList.add("submit");
-
-        // ADD VALUE TO SPAN
-        spanResult.innerText = ratingValue;
-
-        // RETURN TO INITIAL STATE
-        setTimeout(() => {
-            card.classList.remove("submit");
-            const labelActive = document.querySelector("label.active");
-
-            if (labelActive) labelActive.classList.remove("active");
-        }, 5000);
-    });
+    formRating.addEventListener("submit", handleSubmit);
 }
