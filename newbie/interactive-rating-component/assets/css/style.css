@@ -9,13 +9,14 @@
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
     --dark-blue: hsl(213, 19%, 18%);
+    --dark-blue-alt: hsl(213, 19%, 22%);
     --very-dark-blue: hsl(216, 12%, 8%);
 
     /* ==================== TYPOGRAPHY ===================== */
     --main-font: 'Overpass', sans-serif;
 
     /* FONT SIZE */
-    --h1-font-size: 1.185rem;
+    --h1-font-size: 1.285rem;
     --normal-font-size: 1rem;
     --p-font-size: .938rem;
 }
@@ -24,7 +25,7 @@
 @media screen and (min-width: 1024px) {
     :root {
         /* FONT SIZE */
-        --h1-font-size: 1.285rem;
+        --h1-font-size: 1.385rem;
         --normal-font-size: 1.125rem;
         --p-font-size: 1.025rem;
     }
@@ -53,4 +54,80 @@ h2 {
 
 img {
     max-width: 100%;
+}
+
+/* ==================== CARD ===================== */
+.card {
+    width: 85vw;
+    max-width: 375px;
+    background-color: var(--dark-blue);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 10px hsla(216, 12%, 54%, .15);
+}
+
+.card__icon {
+    background-color: var(--dark-blue-alt);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card__rating-desc {
+    color: var(--light-grey);
+    margin-block: 1rem 1.5rem;
+    line-height: 1.65;
+}
+
+.card__radios {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.65rem;
+}
+
+.card__radio {
+    display: none;
+}
+
+.card__label {
+    background-color: var(--dark-blue-alt);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--medium-grey);
+    transition: .3s;
+}
+
+.card__label:hover {
+    background-color: var(--medium-grey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.card__btn {
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-block: .85rem;
+    border-radius: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-weight: bold;
+    letter-spacing: .1rem;
+    transition: .3s;
+}
+
+.card__btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
 }
