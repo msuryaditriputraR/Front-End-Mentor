@@ -134,6 +134,15 @@ img {
     transition: .3s;
 }
 
+.card__label.active {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.card__label.active:hover {
+    background-color: var(--orange);
+}
+
 .card__label:hover {
     background-color: var(--medium-grey);
     color: var(--white);
