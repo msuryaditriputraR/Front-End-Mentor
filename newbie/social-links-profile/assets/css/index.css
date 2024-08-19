@@ -96,3 +96,30 @@ a {
     background-color: var(--c-green);
     color: var(--grey-900);
 }
+
+/* ==================== FOOTER ===================== */
+footer {
+    margin-top: 1.25rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.65rem;
+}
+
+footer :is(i, a) {
+    color: var(--c-green);
+}
+
+footer a {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration-style: solid;
+    text-underline-offset: 1px;
+}
