@@ -3,6 +3,7 @@
 
 /* ==================== CSS VARIABLES ===================== */
 :root {
+    --bg-body: hsl(0, 0%, 0%);
     --c-green: hsl(75, 94%, 57%);
     --c-white: hsl(0, 0%, 100%);
     --grey-700: hsl(0, 0%, 20%);
@@ -11,4 +12,23 @@
 
     --heading-font: 1.5rem;
     --body-font: 0.875rem;
+}
+
+/* ==================== CSS RESET ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-size: var(--body-font);
+    background-color: var(--bg-body);
+    color: var(--c-white);
+}
+
+a {
+    text-decoration: none;
 }
