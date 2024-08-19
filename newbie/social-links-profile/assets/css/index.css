@@ -92,7 +92,8 @@ a {
     font-size: 1.15rem;
 }
 
-.card__link:hover {
+.card__link:hover,
+.card__link:focus {
     background-color: var(--c-green);
     color: var(--grey-900);
 }
