@@ -1,2 +1,14 @@
 /* ==================== GOOGLE FONTS ===================== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ==================== CSS VARIABLES ===================== */
+:root {
+    --c-green: hsl(75, 94%, 57%);
+    --c-white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    --heading-font: 1.5rem;
+    --body-font: 0.875rem;
+}
