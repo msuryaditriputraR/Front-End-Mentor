@@ -1,109 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+        <!--- ==================== BOX ICONS ===================== -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
 
-  <!--- ==================== BOX ICONS ===================== -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--- ==================== STYLE CSS ===================== -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
 
-  <!--- ==================== STYLE CSS ===================== -->
-  <link rel="stylesheet" href="assets/css/style.css">
+    <body>
+        <main>
+            <div class="card">
+                <div class="card__image">
+                    <img
+                        src="assets/images/illustration-woman-online-mobile.svg"
+                        width="296"
+                        height="196"
+                        alt=""
+                        class="hide-desktop"
+                    />
+                    <img
+                        src="assets/images/illustration-woman-online-desktop.svg"
+                        alt=""
+                        class="hide-mobile"
+                    />
+                </div>
+                <div class="card__accordions">
+                    <h1 class="card__title">
+                        <abbr title="Frequently Asked Questions">FAQ</abbr>
+                    </h1>
+                    <article class="card__accordion">
+                        <div class="card__accordion-header">
+                            <h2 class="card__accordion-title">
+                                How many team members can I invite?
+                            </h2>
+                            <i
+                                class="bx bxs-chevron-down card__accordion-icon"
+                            ></i>
+                        </div>
+                        <div class="card__accordion-content">
+                            <p class="card__accordion-desc">
+                                You can invite up to 2 additional users on the
+                                Free plan. There is no limit on team members for
+                                the Premium plan.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card__accordion">
+                        <div class="card__accordion-header">
+                            <h2 class="card__accordion-title">
+                                What is the maximum file upload size?
+                            </h2>
+                            <i
+                                class="bx bxs-chevron-down card__accordion-icon"
+                            ></i>
+                        </div>
+                        <div class="card__accordion-content">
+                            <p class="card__accordion-desc">
+                                No more than 2GB. All files in your account must
+                                fit your allotted storage space.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card__accordion">
+                        <div class="card__accordion-header">
+                            <h2 class="card__accordion-title">
+                                How do I reset my password?
+                            </h2>
+                            <i
+                                class="bx bxs-chevron-down card__accordion-icon"
+                            ></i>
+                        </div>
+                        <div class="card__accordion-content">
+                            <p class="card__accordion-desc">
+                                Click “Forgot password” from the login page or
+                                “Change password” from your profile page. A
+                                reset link will be emailed to you.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card__accordion">
+                        <div class="card__accordion-header">
+                            <h2 class="card__accordion-title">
+                                Can I cancel my subscription?
+                            </h2>
+                            <i
+                                class="bx bxs-chevron-down card__accordion-icon"
+                            ></i>
+                        </div>
+                        <div class="card__accordion-content">
+                            <p class="card__accordion-desc">
+                                Yes! Send us a message and we’ll process your
+                                request no questions asked.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card__accordion">
+                        <div class="card__accordion-header">
+                            <h2 class="card__accordion-title">
+                                Do you provide additional support?
+                            </h2>
+                            <i
+                                class="bx bxs-chevron-down card__accordion-icon"
+                            ></i>
+                        </div>
+                        <div class="card__accordion-content">
+                            <p class="card__accordion-desc">
+                                Chat and email support is available 24/7. Phone
+                                lines are open during normal business hours.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
 
-</head>
-
-<body>
-
-  <main>
-    <div class="card">
-      <div class="card__image">
-        <img src="assets/images/illustration-woman-online-mobile.svg" width="296" height="196" alt=""
-          class="hide-desktop">
-        <img src="assets/images/illustration-woman-online-desktop.svg" alt="" class="hide-mobile">
-      </div>
-      <div class="card__accordions">
-        <h1 class="card__title">
-          <abbr title="Frequently Asked Questions">FAQ</abbr>
-        </h1>
-        <article class="card__accordion">
-          <div class="card__accordion-header">
-            <h2 class="card__accordion-title">
-              How many team members can I invite?
-            </h2>
-            <i class='bx bxs-chevron-down card__accordion-icon'></i>
-          </div>
-          <div class="card__accordion-content">
-            <p class="card__accordion-desc">You can invite up to 2 additional users on the Free plan. There is no limit
-              on
-              team members for the Premium plan.</p>
-          </div>
-        </article>
-        <article class="card__accordion">
-          <div class="card__accordion-header">
-            <h2 class="card__accordion-title">
-              What is the maximum file upload size?
-            </h2>
-            <i class='bx bxs-chevron-down card__accordion-icon'></i>
-          </div>
-          <div class="card__accordion-content">
-            <p class="card__accordion-desc">
-              No more than 2GB. All files in your account must fit your allotted storage
-              space.
-            </p>
-          </div>
-        </article>
-        <article class="card__accordion">
-          <div class="card__accordion-header">
-            <h2 class="card__accordion-title">
-              How do I reset my password?
-            </h2>
-            <i class='bx bxs-chevron-down card__accordion-icon'></i>
-          </div>
-          <div class="card__accordion-content">
-            <p class="card__accordion-desc">
-              Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will
-              be emailed to you.
-            </p>
-          </div>
-        </article>
-        <article class="card__accordion">
-          <div class="card__accordion-header">
-            <h2 class="card__accordion-title">
-              Can I cancel my subscription?
-            </h2>
-            <i class='bx bxs-chevron-down card__accordion-icon'></i>
-          </div>
-          <div class="card__accordion-content">
-            <p class="card__accordion-desc">
-              Yes! Send us a message and we’ll process your request no questions asked.
-            </p>
-          </div>
-        </article>
-        <article class="card__accordion">
-          <div class="card__accordion-header">
-            <h2 class="card__accordion-title">
-              Do you provide additional support?
-            </h2>
-            <i class='bx bxs-chevron-down card__accordion-icon'></i>
-          </div>
-          <div class="card__accordion-content">
-            <p class="card__accordion-desc">
-              Chat and email support is available 24/7. Phone lines are open during normal business hours.
-            </p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </main>
-
-  <!--- ==================== MAIN JAVASCRIPT ===================== -->
-  <script src="assets/js/main.js"></script>
-</body>
-
+        <!--- ==================== MAIN JAVASCRIPT ===================== -->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
